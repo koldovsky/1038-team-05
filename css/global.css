@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    scroll-behavior: smooth;
+    --orange-small-text: #FF9628;;
+    --text-color: #4B566A;
+}
+
+body {
+    background-color: #FFFFFF;
+}
