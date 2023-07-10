@@ -1,55 +1,44 @@
-.what-to-expect
-{
+.what-to-expect {
   display: flex;
   flex-direction: column;
 }
-.what-to-expect__small-text
-{
+.what-to-expect__small-text {
     text-transform: uppercase;
     font-size: 11px;
     color: var(--orange-small-text);
     text-align: center;
 }
-.what-to-expect__title
-{
+.what-to-expect__title {
     font-size: 42px;
     color: #4B566A;
     text-align:center;
 }
-.what-to-expect__divider
-{
+.what-to-expect__divider {
     width: 70px;
 }
-.what-to-expect__description
-{
+.what-to-expect__description {
     font-size: 19px;
     color: var(--text-color);
     text-align:center;
 }
-.what-to-expect__cards
-{
+.what-to-expect__cards {
     display: flex;
     flex-direction: row;
 }
-.what-to-expect__cards-item
-{
+.what-to-expect__cards-item {
 
 }
-.item__title
-{
+.item__title {
     font-size: 26px;
     color: var(--text-color);
 }
-.item__photo
-{
+.item__photo {
     width: 92px;
 }
-.item__divider
-{
+.item__divider {
     width: 52px;
 }
-.item__subtext
-{
+.item__subtext {
     font-size: 26px;
     color: var(--text-color);
 }
