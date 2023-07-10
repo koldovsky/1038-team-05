@@ -6,6 +6,8 @@
 
 :root {
     scroll-behavior: smooth;
+    --orange-small-text: #FF9628;;
+    --text-color: #4B566A;
 }
 
 body {

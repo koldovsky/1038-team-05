@@ -7,8 +7,8 @@
 {
     text-transform: uppercase;
     font-size: 11px;
-    color: #FF9628;
-    text-align:center;
+    color: var(--orange-small-text);
+    text-align: center;
 }
 .what-to-expect__title
 {
@@ -23,7 +23,7 @@
 .what-to-expect__description
 {
     font-size: 19px;
-    color: #4B566A;
+    color: var(--text-color);
     text-align:center;
 }
 .what-to-expect__cards
@@ -38,7 +38,7 @@
 .item__title
 {
     font-size: 26px;
-    color: #4B566A;
+    color: var(--text-color);
 }
 .item__photo
 {
@@ -51,5 +51,5 @@
 .item__subtext
 {
     font-size: 26px;
-    color: #4B566A;
+    color: var(--text-color);
 }
