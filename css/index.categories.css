@@ -1,0 +1,21 @@
+.categories{
+    padding: 105px 0px 30px 0px;
+}
+.categories__first-subtitle {
+    color: var(--orange-small-text);
+    text-align: center;
+    font-weight: 700;
+}
+.categories__title {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 46px;
+}
+.categories__second-subtitle{
+    color: var(--text-color);
+    text-align: center;
+}
+.categories_plates {
+    display: flex;
+    flex-direction: row;
+}

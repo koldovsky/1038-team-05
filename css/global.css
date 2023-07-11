@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +9,7 @@
 
 :root {
     scroll-behavior: smooth;
-    --orange-small-text: #FF9628;;
+    --orange-small-text: #ff5d36;
     --text-color: #4B566A;
 }
 
