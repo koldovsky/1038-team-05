@@ -1,5 +1,5 @@
 .news-intro {
-    background-image: url(/img/news/background_intro.png);
+    background-image: url(img/news/background_intro.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,7 +7,7 @@
 }
 
 .news-main-info {
-    background-image: url(/img/news/background_main.png);
+    background-image: url(img/news/background_main.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
