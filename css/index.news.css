@@ -1,4 +1,4 @@
-.news-intro {
+.news__introduction {
     background-image: url(img/news/background_intro.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -6,10 +6,14 @@
     flex-direction: column;
 }
 
-.news-main-info {
-    background-image: url(img/news/background_main.png);
+.news__content {
+    background-image: url('background_main.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column; 
+}
+
+.news__content-wine-card {
+    background-image: url(img/news/wine.webp);
 }
