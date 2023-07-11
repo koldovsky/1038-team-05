@@ -1,0 +1,51 @@
+
+
+.logo-white{
+    background-color:  #f7f6f2;
+}
+
+.container{
+    width: 375px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo-img{
+    width: 153px;
+}
+.working-hours, .menu-list{
+    display: none;
+    list-style: none;
+}
+.list-logo{
+    list-style: none;
+}
+
+.list-logo-item {
+    position: relative;
+    display: block;
+    height: 2px ;
+    width: 24px;
+    background-color: black;
+}
+.list-logo-item::before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    content: ' ';
+    height: 2px ;
+    width: 24px;
+    background-color: black;
+}
+
+.list-logo-item::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    content: ' ';
+    height: 2px ;
+    width: 24px;
+    background-color: black;
+}
