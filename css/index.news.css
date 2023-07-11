@@ -1,5 +1,5 @@
 .news__introduction {
-    background-image: url(/img/news/background_intro.png);
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,7 +7,7 @@
 }
 
 .news__content {
-    background-image: url(/img/news/background_main.png);
+    background-image: url();
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,5 +15,5 @@
 }
 
 .news__content-wine-card {
-    background-image: url(/img/news/wine.webp);
+    background-image: url();
 }
