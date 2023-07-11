@@ -1,31 +1,87 @@
 <section class="categories">
-    <div class="categories__header">
-        <p class="header__top-subtitle">- CATEGORIES -</p>
-        <h2 class="header__title">Variety of Dishes to Meet Any Taste</h2>
+    <div class="categories__upper-part">
+        <p class="categories__first-subtitle">- CATEGORIES -</p>
+        <h2 class="categories__title">Variety of Dishes to Meet Any Taste</h2>
         <!--Here must be THAT idk what is that-->
-        <p class="header__bot-subtitle">We always have something special for you.</p>
+        <p class="categories__second-subtitle">We always have something special for you.</p>
     </div>
-    <div>
-        <article>
-            <div>
-                <img src="img-categories/first plate.jpg" alt="first plate" width="120">
+    <div class="categories_plates plates">
+        <article class="plates__plate plate">
+            <div class="plate__image-container">
+                <img class="plate__image" src="img/categories/first plate.jpg" alt="plate with meat" width="120">
             </div>
-            <p><a href="#">Main Courses</a>→</p>
+            <span class="plate__name"><a href="#">Main Courses</a></span>
+            <span class="plate__arrow">→</span>
+            <p class="plate__offer">We offer a wide selection of fish and meat dishes.</p>
         </article>
-        <article>
-            <div>
-                <img src="img-categories/second plate.jpg" alt="second plate" width="120">
+        <article class="plates__plate plate">
+            <div class="plate__image-container">
+                <img class="plate__image" src="img/categories/second plate.jpg" alt="plate with salad" width="120">
             </div>
-            <p><a href="#">Lunch & Dinner</a>→</p>
+            <span class="plate__name"><a href="#">Lunch & Dinner</a></span>
+            <span class="plate__arrow">→</span>
+            <p class="plate__offer">Fresh pasta, salads, toasts, and much more.</p>
         </article>
-        <article>
-            <div>
-                <img src="img-categories/third plate.jpg" alt="third plate" width="120">
+        <article class="plates__plate plate">
+            <div class="plate__image-container">
+                <img class="plate__image" src="img/categories/third plate.jpg" alt="plate with pasta" width="120">
             </div>
-            <p><a href="#">Chef's Specials</a>→</p>
+            <span class="plate__name"><a href="#">Chef's Specials</a></span>
+            <span class="plate__arrow">→</span>
+            <p class="plate__offer">Try our chef's seasonal menu limited in time!</p>
         </article>
     </div>
-    <div>
-        <img src="img-categories/categories mainphoto.jpg" alt="Food" width="700">
+    <div class="categories__main-photo">
+        <img src="img/categories/categories mainphoto.jpg" alt="All food" width="700">
+    </div>
+    <div class="categories__menu menu">
+        <div class="menu__column column">
+            <div class="column__item item">
+                <span class="item__name">Duck Confit Poutine</span>
+                <span class="item__decoration">__________</span>
+                <span class="item__price">$24</span>
+                <span class="item__ingredients">Pickled red cabbage, green peas, caramelized onions, duck confit.</span>
+            </div>
+            <div class="column__item item">
+                <span class="item__name">Warm Goat Cheese Salad</span>
+                <span class="item__decoration">__________</span>
+                <span class="item__price">$16</span>
+                <span class="item__ingredients">Mixed greens, sunflower seeds, dried cranberries, pan-fried cheese.</span>
+            </div>
+            <div class="column__item item">
+                <span class="item__name">Beef Tartare</span>
+                <span class="item__decoration">__________</span>
+                <span class="item__price">$25</span>
+                <span class="item__ingredients">Beef filet, fermented cabbage, grilled romaine heart, cashew purée.</span>
+            </div>
+        </div>
+        <div class="menu__column column">
+            <div class="column__item item">
+                <span class="item__name">Creamy Mac and Cheese</span>
+                <span class="item__decoration">__________</span>
+                <span class="item__price">$20</span>
+                <span class="item__ingredients">Homemade pasta and freshly made and warmed up creamy cheese sauce.</span>
+            </div>
+            <div class="column__item item">
+                <span class="item__name">Grilled Vegetables Salad</span>
+                <span class="item__decoration">__________</span>
+                <span class="item__price">$35</span>
+                <span class="item__ingredients">Roasted vegetables, celeriac purée, sunflower seeds, black olive crumble.</span>
+            </div>
+            <div class="column__item item">
+                <span class="item__name">Chicken A La King</span>
+                <span class="item__decoration">__________</span>
+                <span class="item__price">$25</span>
+                <span class="item__ingredients">Creamy white sauce with poached chicken pieces, mushrooms, garlic.</span>
+            </div>
+        </div>
+    </div>
+    <div class="categories__button button">
+        <span class="button__first-button first-button">
+            <button class="first-button" type="button" name="pdf download">Download PDF</button>
+        </span>
+        <span class="button__second-button second-button">
+            <button class="second-button" type="button" name="menu">Open Full Menu</button>
+        </span>
     </div>
 </section>
