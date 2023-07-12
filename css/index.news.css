@@ -1,0 +1,19 @@
+.news__introduction {
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.news__content {
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column; 
+}
+
+.news__content-wine-card {
+    background-image: url();
+}
