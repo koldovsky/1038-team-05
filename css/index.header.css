@@ -7,7 +7,7 @@
 .container{
     width: 375px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 16px;
 }
 
 .logo-img{
@@ -17,8 +17,28 @@
     display: none;
     list-style: none;
 }
+
+/* .list-menu{
+   
+} */
 .list-logo{
     list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.list-logo-btn{
+    height: 40px;
+    width: 40px;
+
+    border: 0;
+    background-color:  #f7f6f2;
+    padding-left: 72px;
+    ;
+    
 }
 
 .list-logo-item {
@@ -26,8 +46,9 @@
     display: block;
     height: 2px ;
     width: 24px;
-    background-color: black;
+    background-color: #82868f;
 }
+
 .list-logo-item::before {
     display: block;
     position: absolute;
@@ -36,7 +57,7 @@
     content: ' ';
     height: 2px ;
     width: 24px;
-    background-color: black;
+    background-color: #82868f;
 }
 
 .list-logo-item::after {
@@ -47,5 +68,5 @@
     content: ' ';
     height: 2px ;
     width: 24px;
-    background-color: black;
+    background-color: #82868f;
 }
