@@ -1,44 +1,72 @@
 .what-to-expect {
   display: flex;
   flex-direction: column;
+  margin: 15px;
+  
 }
-.what-to-expect__small-text {
+.what-to-expect__content-small-text {
     text-transform: uppercase;
     font-size: 11px;
     color: var(--orange-small-text);
-    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
 }
-.what-to-expect__title {
-    font-size: 42px;
-    color: #4B566A;
-    text-align:center;
-}
-.what-to-expect__divider {
-    width: 70px;
-}
-.what-to-expect__description {
-    font-size: 19px;
+.what-to-expect__content-title {
+    font-family: Vollkorn, serif;
+    font-size: 2.625rem;
     color: var(--text-color);
-    text-align:center;
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+}
+.what-to-expect__content-divider {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+.what-to-expect__content-description {
+    font-size: 1.18rem;
+    color: rgb(130, 134, 143);
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
 }
 .what-to-expect__cards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
 }
 .what-to-expect__cards-item {
-
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin: 30px;
 }
 .item__title {
-    font-size: 26px;
-    color: var(--text-color);
+    font-size: 1.5rem;
+    color: rgb(75, 86, 106);
+    font-family: Vollkorn, serif;
+    font-weight:400;
+
 }
 .item__photo {
     width: 92px;
 }
 .item__divider {
     width: 52px;
+    height: 3px;
+    background-color:var(--orange-small-text) ;
+    margin: 15px 0 15px 0;
 }
 .item__subtext {
-    font-size: 26px;
-    color: var(--text-color);
+    font-size: 1.06rem;
+    color: rgb(155, 158, 164);
+    font-weight:400;
 }
+
