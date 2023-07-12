@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Vollkorn:wght@400;700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +11,18 @@
     scroll-behavior: smooth;
     --orange-small-text: #ff5d36;
     --text-color: #4B566A;
+    --text-light-color: #fff;
 }
 
 body {
     background-color: #FFFFFF;
+}
+
+h2 {
+    font-family: Vollkorn, serif;
+    font-size: 2.125rem;
+}
+
+p {
+    font-family: Roboto, sans-serif;
 }

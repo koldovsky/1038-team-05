@@ -1,0 +1,52 @@
+.offers {
+    margin: 0;
+    width: 100%;
+}
+
+.offers__title__subtitle {
+    color: black;
+    text-align: center;
+}
+
+.offers__title__name {
+    color: black;
+    text-align: center;
+}
+
+.offers__title__text {
+    color: black;
+    text-align: center;
+}
+
+.offers__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.offers__list__image {
+    object-fit: cover;
+    height: 50%;
+    width: 33.33%;
+}
+
+.offers__list__info {
+    background-color: white;
+    height: 50%;
+    width: 33.33%;
+}
+
+.offers__list__subtitle {
+    color: black;
+    text-align: center;
+}
+
+.offers__list__title {
+    color: black;
+    text-align: center;
+}
+
+.offers__list__text {
+    color: black;
+    text-align: center;
+}
