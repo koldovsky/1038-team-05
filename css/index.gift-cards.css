@@ -47,9 +47,9 @@
     display: flex;
     width: 130px;
     height: 46px;
-    background-color: #fff;
+    background-color: var(--background-light-color);
     border-style: solid;
-    border-color: #fff;
+    border-color: var(--background-light-color);
     border-radius: 7px 25px 25px 25px;
     justify-content: center;
     align-items: center;
