@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  background-color: rgba(255, 93, 40, 0.8);
+  background-color: var(--gift-part-backround-color);
   padding: 80px 0 100px 0;
   min-width: 320px;
   gap: 20px;
@@ -26,7 +26,7 @@
 .vouchers__first-subtitle {
   font-size: 11px;
   font-weight: 900;
-  color: #f7f6f2;
+  color: var(--gift-part-subtitle-color);
   margin-bottom: 15px;
 }
 
@@ -37,7 +37,8 @@
 }
 
 .vouchers__second-subtitle {
-  color: rgba(255, 255, 255, 0.81);
+  color: var(--text-light-color);
+  opacity: 0.81;
   font-size: 1.1875rem;
   margin-bottom: 30px;
   font-weight: 500;
@@ -62,7 +63,7 @@
 .vouchers__conditions:hover {
   background-color: var(--background-dark-color);
   border-color: var(--background-dark-color);
-  color: #fff;
+  color: var(--text-light-color);
 }
 
 .gift-cards__discount-offer-cardsconteiner {
@@ -74,7 +75,7 @@
 .cardsconteiner__card {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: var(--background-light-color);
   margin-bottom: 20px;
   padding: 30px;
   border-radius: 5px;
@@ -86,22 +87,23 @@
 }
 
 .cardsconteiner__card-title {
-  color: rgb(75, 86, 106);
-  font-weight: normal;
+  color: var(--title-color);
+  font-weight: 500;
   font-size: 1.75rem;
   padding-bottom: 20px;
 }
 
 .cardsconteiner__card-text {
   display: flex;
-  color: rgb(155, 158, 164);
+  color: var(--description-text-color);
   line-height: 24px;
   padding-bottom: 20px;
 }
 
 .cardsconteiner__card-subtext {
   display: flex;
-  color: rgba(130, 134, 143, 0.63);
+  color: var(--subtitle-color);
+  opacity: 0.63;
   font-style: italic;
   font-size: 14px;
   line-height: 20px;
@@ -109,11 +111,11 @@
 }
 
 .cardsconteiner__card-subtext-stars {
-  color: rgb(255, 93, 40);
+  color: var(--prices-color);
 }
 
 .cardsconteiner__card-buy {
-  color: rgb(255, 93, 40);
+  color: var(--prices-color);
   font-family: roboto, sans-serif;
   font-size: 0.68rem;
   font-weight: 900;
@@ -123,7 +125,7 @@
 .gift-cards__carousel-inner {
   display: flex;
   flex-direction: column;
-  background-color: #373e4a;
+  background-color: var(--carousel-background-color);
   padding: 20px;
   gap: 20px;
 }
