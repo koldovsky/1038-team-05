@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  background-color: rgba(255, 93, 40, 0.7);
+  background-color: rgba(255, 93, 40, 0.8);
   padding: 80px 0 100px 0;
   min-width: 320px;
   gap: 20px;
@@ -40,6 +40,7 @@
   color: rgba(255, 255, 255, 0.81);
   font-size: 1.1875rem;
   margin-bottom: 30px;
+  font-weight: 500;
 }
 
 .vouchers__conditions {
@@ -52,15 +53,15 @@
   border-radius: 7px 25px 25px 25px;
   justify-content: center;
   align-items: center;
-  color: rgb(75, 86, 106);
+  color: var(--background-dark-color);
   font-family: Roboto, sans-serif;
   font-weight: 600;
   text-decoration: none;
 }
 
 .vouchers__conditions:hover {
-  background-color: rgb(75, 86, 106);
-  border-color: rgb(75, 86, 106);
+  background-color: var(--background-dark-color);
+  border-color: var(--background-dark-color);
   color: #fff;
 }
 
@@ -132,6 +133,9 @@
 }
 
 @media (min-width: 768px) {
+  .vouchers__title {
+    font-size: 2.375rem;
+  }
   .gift-cards__discount-offer-cardsconteiner {
     display: flex;
     flex-direction: row;
@@ -152,13 +156,19 @@
 }
 
 @media (min-width: 992px) {
-    .gift-cards__discount-offer {
-        flex-direction: row;
-        gap: 25px;
-        justify-content: space-around;
-    }
+  .gift-cards {
+    width: auto;
+  }
 
-    .gift-cards__discount-offer-vouchers {
-        height: 100%;
-    }
+  .gift-cards__discount-offer {
+    max-width: 1024px;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: space-around;
+  }
+
+  .gift-cards__discount-offer-vouchers {
+    justify-content: space-between;
+    padding: 20px 0 40px 0;
+  }
 }

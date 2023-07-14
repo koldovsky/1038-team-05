@@ -13,6 +13,7 @@
     --text-color: #4B566A;
     --text-light-color: #fff;
     --background-light-color: #fff;
+    --background-dark-color: rgb(75, 86, 106);
 }
 
 body {
