@@ -17,6 +17,11 @@
     white-space: nowrap;
     padding-bottom: 29.5px;
 }
+@media (max-width: 400px) {
+    .menu-subtitle {
+        white-space: wrap;
+    }
+}
 .menu-subtitle-description{
     display: flex;
     flex-direction: row;
@@ -27,13 +32,13 @@
         flex-direction: column;
     }
 }
+
 .menu-description {
     font-size: 1.0625rem;
     color: var(--description-text-color);
     font-weight:400;
     margin: 20px;
 }
-
 .menu-items{
     display: flex;
     padding-left: 20px;
@@ -44,10 +49,6 @@
 .menu-all-items{
     display: flex;
     flex-direction: column;
-}
-.menu-item{
-    padding-right: 30px;
-    padding-left: 30px;
 }
 @media (min-width: 1028px) {
     .menu-all-items{
@@ -90,13 +91,39 @@
 .menu-item{
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
     max-height: 139px;
     min-height: 139px;
+    max-width: 450px;
+    min-width: 450px;
 }
-@media (max-width: 430px) {
+@media (max-width: 1135px) {
     .menu-item{
+        max-width: 300px;
+        min-width: 300px;
+    }
+}
+@media (max-width: 455px) {
+    .menu-item{
+        max-width: 250px;
+        min-width: 250px;
         max-height: 185px;
         min-height: 185px;
+    }
+}
+@media (max-width: 396px) {
+    .menu-item{
+        max-width: 200px;
+        min-width: 200px;
+        max-height: 250px;
+        min-height: 250px;
+    }
+}
+@media (max-width: 345px) {
+    .menu-item{
+        max-width: 175px;
+        min-width: 175px;
     }
 }
 .menu-items{
