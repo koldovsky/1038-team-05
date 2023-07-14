@@ -1,0 +1,126 @@
+.menu-title {
+    text-transform: uppercase;
+    font-size: 0.6875rem;
+    color: var(--orange-small-text);
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: left;
+}
+.menu-subtitle {
+    font-family: Vollkorn, serif;
+    font-size: 2.625rem;
+    color: var(--text-color);
+    font-weight: normal;
+    display: flex;
+    justify-content: left;
+    white-space: nowrap;
+    padding-bottom: 29.5px;
+}
+.menu-subtitle-description{
+    display: flex;
+    flex-direction: row;
+    
+}
+@media (max-width: 765px) {
+    .menu-subtitle-description{
+        flex-direction: column;
+    }
+}
+.menu-description {
+    font-size: 1.0625rem;
+    color: var(--description-text-color);
+    font-weight:400;
+    margin: 20px;
+}
+
+.menu-items{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 60px;
+    flex-direction: column;
+}
+.menu-all-items{
+    display: flex;
+    flex-direction: column;
+}
+.menu-item{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+@media (min-width: 1028px) {
+    .menu-all-items{
+        display: flex;
+        flex-direction: row;
+    }
+}
+.menu-item-title-price{
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 460px) {
+    .menu-item-title-price{
+        flex-direction: column;
+    }
+}
+.menu-item-title{
+    white-space: nowrap;
+    font-size: 1.5rem;
+}
+@media (max-width: 550px) {
+    .menu-item-title{
+        white-space: wrap;
+    }
+}
+.menu-item-price{
+    color: var(--prices-color);
+    font-size: 1.3125rem;
+}
+.menu-item-description{
+    color: var(--description-text-color);
+    font-size: 1.0625rem;
+}
+.menu-article{
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 95px;
+    padding-bottom: 30px;
+}
+.menu-item{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-height: 139px;
+    min-height: 139px;
+}
+@media (max-width: 430px) {
+    .menu-item{
+        max-height: 185px;
+        min-height: 185px;
+    }
+}
+.menu-items{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+@media (max-width: 280px) {
+    .menu-item-description{
+        white-space: nowrap;
+    }
+    .menu-description {
+        white-space: nowrap;
+    }
+}
+.filler{
+    max-width: 70px;
+}
+.menu-main{
+    margin: auto;
+}
+.menu-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
