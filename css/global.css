@@ -10,9 +10,11 @@
 :root {
     scroll-behavior: smooth;
     --orange-small-text: #ff5d36;
+    --prices-color: rgb(255, 93, 40);
     --text-color: #4B566A;
     --text-light-color: #fff;
     --background-light-color: #fff;
+    --description-text-color: rgb(155, 158, 164);
 }
 
 body {
