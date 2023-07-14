@@ -6,7 +6,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.img{
+    display: block;
+    width: 100%;
+}
 :root {
     scroll-behavior: smooth;
     --orange-small-text: #ff5d36;
