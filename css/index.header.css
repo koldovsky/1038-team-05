@@ -11,7 +11,9 @@
 }
 
 .logo-img{
-    width: 153px;
+  width: 100%;
+  max-width: 153px;
+  height: auto;
 }
 .working-hours, .menu-list{
     display: none;
