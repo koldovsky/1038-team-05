@@ -1,25 +1,24 @@
-.gift-cards {
+.gift-cards__discount {
+  width: 100%;
+  background-image: url(../img/gift-cards/background-image-gift-cards.png);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  background-color: var(--gift-part-backround-color);
-  padding: 80px 0 100px 0;
-  min-width: 320px;
-  gap: 20px;
+  justify-content: space-around;
 }
 
 .gift-cards__discount-offer {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
-  padding: 0 24px 0 24px;
+  align-items: center;
+  /* background-color: var(--gift-part-backround-color); */
+  padding: 90px 25px 90px 25px;
+  min-width: 320px;
+  gap: 20px;
 }
 
 .gift-cards__discount-offer-vouchers {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding-bottom: 0 15px 0 15px;
 }
 
@@ -69,14 +68,15 @@
 .gift-cards__discount-offer-cardsconteiner {
   display: flex;
   flex-direction: column;
-  padding: 20px 0 20px 0;
+  gap: 25px;
+  /* padding: 20px 0 20px 0; */
 }
 
 .cardsconteiner__card {
   display: flex;
   flex-direction: column;
   background-color: var(--background-light-color);
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   padding: 30px;
   border-radius: 5px;
 }
@@ -128,6 +128,7 @@
   background-color: var(--carousel-background-color);
   padding: 20px;
   gap: 20px;
+  align-items: center;
 }
 
 .gift-cards__carousel-item-image {
@@ -135,6 +136,11 @@
 }
 
 @media (min-width: 768px) {
+  .gift-cards__discount-offer-vouchers {
+    width: 100%;
+    align-items: flex-start;
+  }
+
   .vouchers__title {
     font-size: 2.375rem;
   }
@@ -158,19 +164,23 @@
 }
 
 @media (min-width: 992px) {
-  .gift-cards {
-    width: auto;
-  }
-
   .gift-cards__discount-offer {
     max-width: 1024px;
     flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
     gap: 25px;
     justify-content: space-around;
   }
 
   .gift-cards__discount-offer-vouchers {
+    max-width: 350px;
+    height: 100%;
+    align-content: space-between;
     justify-content: space-between;
-    padding: 20px 0 40px 0;
+  }
+
+  .vouchers__title {
+    font-size: 2.625rem;
   }
 }
