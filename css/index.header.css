@@ -15,7 +15,7 @@
   max-width: 153px;
   height: auto;
 }
-.working-hours, .menu-list{
+.working-hours, .menu-list, .hidding-wrapper{
     display: none;
     list-style: none;
 }
@@ -71,3 +71,9 @@
     width: 24px;
     background-color: #82868f;
 }
+
+@media (min-width: 990px) {
+    .working-hours, .menu-list, .hidding-wrapper {
+      display: block;
+    }
+  }
