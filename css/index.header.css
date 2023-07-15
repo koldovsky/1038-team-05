@@ -11,9 +11,11 @@
 }
 
 .logo-img{
-    width: 153px;
+  width: 100%;
+  max-width: 153px;
+  height: auto;
 }
-.working-hours, .menu-list{
+.working-hours, .menu-list, .hidding-wrapper{
     display: none;
     list-style: none;
 }
@@ -69,3 +71,27 @@
     width: 24px;
     background-color: #82868f;
 }
+
+/* 12345678 */
+@media (min-width: 990px) {
+    .working-hours, .menu-list, .hidding-wrapper {
+      display: block;
+      
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+   .list-logo-btn{
+    display: none;
+   }
+
+    .social-list, .menu-list-item{
+        list-style: none;
+        display: flex;
+      justify-content: space-between;
+    }
+   
+
+  }
