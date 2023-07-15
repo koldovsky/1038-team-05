@@ -32,7 +32,12 @@
 .vouchers__title {
   font-weight: 400;
   color: var(--text-light-color);
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+}
+
+.vouchers__line-image {
+  width: 70px;
+  padding-bottom: 35px;
 }
 
 .vouchers__second-subtitle {
