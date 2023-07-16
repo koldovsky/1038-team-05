@@ -22,7 +22,8 @@
     --description-text-color: rgb(155, 158, 164);
     --gift-part-backround-color: rgba(255, 93, 40, 0.8);
     --gift-part-subtitle-color: #f7f6f2;
-    --carousel-background-color: #373e4a
+    --carousel-background-color: #373e4a;
+    --buttons-color: #ff5d28;
 }
 
 body {
