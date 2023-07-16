@@ -169,7 +169,7 @@
     padding-bottom: 30px;
     background: url(../img/menu/reserve-backgroung.jpg);
     background-size: cover;
-    background-position: 80% 20%; 
+    background-position: 60% 20%; 
     background-attachment: fixed;
 }
 .menu-reserve-article{
@@ -194,4 +194,12 @@
 }
 .book-a-table-buttn{
     margin-top: 40px;
+}
+.filler{
+    width: 70px;
+    height: 13.67px;
+}
+.filler-white{
+    width: 70px;
+    height: 13.67px;
 }
