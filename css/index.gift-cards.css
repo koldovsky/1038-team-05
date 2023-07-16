@@ -1,6 +1,7 @@
 .gift-cards__discount {
   width: 100%;
   background-image: url(../img/gift-cards/background-image-gift-cards.png);
+  background-attachment: fixed;
   display: flex;
   justify-content: space-around;
 }
@@ -129,11 +130,12 @@
 
 .gift-cards__carousel-inner {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   background-color: var(--carousel-background-color);
   padding: 20px;
   gap: 20px;
-  align-items: center;
+  justify-content: center;
 }
 
 .gift-cards__carousel-item-image {
