@@ -6,10 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.img{
-    display: block;
-    width: 100%;
-}
+
 :root {
     scroll-behavior: smooth;
     --orange-small-text: #ff5d36;
@@ -24,6 +21,11 @@
     --gift-part-subtitle-color: #f7f6f2;
     --carousel-background-color: #373e4a;
     --buttons-color: #ff5d28;
+}
+
+.img {
+    display: block;
+    width: 100%;
 }
 
 body {
