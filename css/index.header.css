@@ -1,5 +1,31 @@
+.menu-item {
+    text-decoration: none;
 
-
+    
+}
+.list-item{
+    font-size: 1.0625rem;
+    color: #82868f;;
+    font-weight: 400;
+    /* margin: 20px; */
+}
+/* а {
+    color: #82868f;
+} */
+.social-name{
+ margin-bottom: 10px;
+}
+.social-link , .social-name, .working-hours-name{
+    /* color: #4b566a; */
+    color: rgb(166,58,24);
+    font-weight: 500;
+    font-size: 0.8rem;
+    /* color: var(--subtitle-color); */
+    font-family: Roboto, sans-serif;
+    
+    /* font-weight: 500; */
+    /* font-family: Roboto, sans-serif; */
+}
 .logo-white{
     background-color:  #f7f6f2;
 }
@@ -16,6 +42,7 @@
 
 .social-list{
     width: 358px;
+    /* margin-left: -10px; */
 }
 
 .logo-img{
@@ -37,6 +64,7 @@
 .working-hours-social{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* .list-menu{
@@ -100,6 +128,10 @@
     color: #ff5d28 ;
 }
 
+.wrapper-orange .container {
+        display: none;
+    }
+
 /* 12345678 */
 @media (min-width: 990px) {
     .working-hours, .menu-list, .hidding-wrapper {
@@ -132,5 +164,8 @@
     }
     .list-item:not(:last-child){
        margin-right: 30px;
+    }
+    .wrapper-orange .container {
+        display: block;
     }
   }
