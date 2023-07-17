@@ -1,51 +1,64 @@
-.about-us {
-  display: flex;
-  align-items: center;
-  display: block;
+.about-us{
+width:350px;
+height: 1090px; 
+display: flex;
+flex-direction: column;
+text-align: left;
+background-color: white;
+padding: 10px;
+
 }
+.about-us__restaurant-table{
+width: 302px; 
+height: 400px; 
+display: flex;
+margin-top: 25px;
 
-.about-us__text {
-  flex: 1;
-  width: calc(100% - 335.2px);
-  height: 363.99px;
-  float: left;}
-  
+} 
 
-.about-us__restaurant-table {
-  width: 325.2px;
-  height: 363.99px;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  object-position: center;
-  float: left;
+.about-us__first-subtitle {
+color :var(--orange-small-text);
+font-size:11px ;
+margin-top: 50px;
+text-align: left;
 }
-.about-us__paragraph {
-  color:rgb(155,158,164)
-
+.about-us__title{
+    color: var(--text-color);
+    display: flex;
+    line-height: 1;
+    font-weight: 100;
+    font-size:34px ;
+    
 }
 .about-us__first-paragraph{
-  color:#82868f
+    color: #82868f;
+    font-weight: 500;
+    font-size:19px ;
+    margin-top: 15px;
+
+
 }
-.about-us__first-subtitle {
-  font-size: 14px;
-  color: #ff5d28;
+.about-us__paragraph{
+color: rgb(155,158,164);
+ font-size:17px ;
 }
-.about-us__title {
-  font-size: 24px;
-  color:#4b566a;
+.about-us__designer-logo{
+    margin-top: 20px;
+
 }
-.about-us__text {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 10px;
+.read-more-button{
+    background-color: #ff5d28;
+    border: none;
+    color: white ;
+    text-align: center;
+    border-radius: 7px 25px 25px 25px;
+    width: 130px;
+    height: 46px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
-.read-more-button {
-  color: white;
-  background-color: #ff5d28;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  float: left;
-  border: none; 
- }
+
+  
+
