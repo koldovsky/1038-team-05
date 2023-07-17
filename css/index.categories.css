@@ -1,3 +1,11 @@
+.categories{
+    padding: 95px 0px 30px 0px;    
+}
+@media (min-width: 768px){
+    .categories{
+        padding: 105px 0px 30px 0px;
+    }
+}
 .categories__first-subtitle {
     font-size: 11px;
     font-family: Roboto, sans-serif;
@@ -5,33 +13,75 @@
     text-align: center;
     font-weight: 700;
 }
-
 .categories__title {
     font-size: 46px;
     font-family: Vollkorn, serif;
     color: var(--title-color);
     text-align: center;
 }
-
 .categories__second-subtitle {
     font-size: 19px;
     font-family: Roboto, sans-serif;
     color: var(--subtitle-color);
     text-align: center;
 }
-
+.categories_plates {
+    display: flex;
+    flex-direction: column;
+}
 @media (min-width: 768px) {
     .categories_plates {
-        display: flex;
         flex-direction: row;
         justify-content: center;
     }
 }
 
+
+
+
+.column-one {
+    padding: 0px 15px;
+}
+.column-two {
+    margin-top: 50px;
+    padding: 0px 15px;
+}
+@media (min-width: 768px) {
+    .menu{
+        display: grid;
+
+    }
+    .column-two {  
+        margin-top: 0px;      
+        padding: 0px 15px;
+    }
+    .test{
+        display: block;
+    }
+}
+.item__ingredients {
+    display: block;
+}
+
+
 .first-button {
     background-color: var(--background-light-color);
+    border-style: 2px solid;
+    color: var(--orange-small-text);
+    font-size: 16px;
     border-color: var(--buttons-color);    
     border-radius: 7px 25px 25px 25px;
     width: 130px;
     height: 46px;
 }
+.second-button {
+    background-color: var(--buttons-color);
+    border-style: solid; 
+    border: none;      
+    font-size: 16px;
+    color: var(--text-light-color);
+    border-radius: 7px 25px 25px 25px;
+    width: 130px;
+    height: 46px;
+}
+

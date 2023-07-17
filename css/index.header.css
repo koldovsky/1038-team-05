@@ -1,136 +1,161 @@
-
-
-.logo-white{
-    background-color:  #f7f6f2;
-}
-.wrapper-orange{
+:root {
+    --primary-color: #a63a18;
+    --secondary-color: #82868f;
+    --background-color: #f7f6f2;
+    --accent-color: #ff5d28;
+  }
+  
+  .menu-item {
+    text-decoration: none;
+  }
+  
+  .list-item {
+    font-size: 1.0625rem;
+    color: var(--secondary-color);
+    font-weight: 400;
+  }
+  
+  .social-name {
+    margin-bottom: 10px;
+  }
+  
+  .social-link,
+  .social-name,
+  .working-hours-name {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.8rem;
+    font-family: Roboto, sans-serif;
+  }
+  
+  .logo-white {
+    background-color: var(--background-color);
+  }
+  
+  .wrapper-orange {
     width: 100%;
-    background-color:#ff5d28  ;
-}
-
-.container{
+    background-color: var(--accent-color);
+  }
+  
+  .container {
     width: 100%;
     margin: 0 auto;
     padding: 16px;
-}
-
-.social-list{
+  }
+  
+  .social-list {
     width: 358px;
-}
-
-.logo-img{
-  width: 100%;
-  max-width: 153px;
-  height: auto;
-}
-.working-hours, .menu-list, .hidding-wrapper{
+  }
+  
+  .logo-img {
+    width: 100%;
+    max-width: 153px;
+    height: auto;
+  }
+  
+  .working-hours,
+  .menu-list,
+  .hidding-wrapper {
     display: none;
     list-style: none;
     width: 100%;
-}
-.menu-list{
+  }
+  
+  .menu-list {
     width: 100%;
     justify-content: flex-end;
-
-}
-
-.working-hours-social{
+  }
+  
+  .working-hours-social {
     display: flex;
     justify-content: space-between;
-}
-
-/* .list-menu{
-   
-} */
-.list-logo{
+    align-items: center;
+  }
+  
+  .list-logo {
     list-style: none;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-
-.list-logo-btn{
+  }
+  
+  .list-logo-btn {
     height: 40px;
     width: 40px;
-
     border: 0;
-    background-color:  #f7f6f2;
-    /* padding-left: 72px; */
-    
-}
-
-.list-logo-item {
+    background-color: var(--background-color);
+  }
+  
+  .list-logo-item {
     position: relative;
     display: block;
-    height: 2px ;
+    height: 2px;
     width: 24px;
-    background-color: #82868f;
-}
-
-.list-logo-item::before {
+    background-color: var(--secondary-color);
+  }
+  
+  .list-logo-item::before,
+  .list-logo-item::after {
     display: block;
     position: absolute;
     left: 0;
+    content: "";
+    height: 2px;
+    width: 24px;
+    background-color: var(--secondary-color);
+  }
+  
+  .list-logo-item::before {
     top: 5px;
-    content: ' ';
-    height: 2px ;
-    width: 24px;
-    background-color: #82868f;
-}
-
-.list-logo-item::after {
-    display: block;
-    position: absolute;
-    left: 0;
+  }
+  
+  .list-logo-item::after {
     bottom: 5px;
-    content: ' ';
-    height: 2px ;
-    width: 24px;
-    background-color: #82868f;
-}
-
-.menu-item{
+  }
+  
+  .menu-item {
     color: inherit;
-    padding: 0 !important;   
+    padding: 0 !important;
     transition: color 300ms linear;
-}
-.menu-item:hover{
-    color: #ff5d28 ;
-}
-
-/* 12345678 */
-@media (min-width: 990px) {
-    .working-hours, .menu-list, .hidding-wrapper {
-      /* display: block; */
-      
-
+  }
+  
+  .menu-item:hover {
+    color: var(--accent-color);
+  }
+  
+  .wrapper-orange .container {
+    display: none;
+  }
+  
+  @media (min-width: 990px) {
+    .working-hours,
+    .menu-list,
+    .hidding-wrapper {
       display: flex;
-      /* justify-content: space-between; */
+      justify-content: space-between;
       align-items: center;
     }
-
-    .working-hours, .hidding-wrapper {
-        justify-content: space-between;
+  
+    .list-logo-btn {
+      display: none;
     }
-    
-
-   .list-logo-btn{
-    display: none;
-   }
-
-    .social-list, .menu-list-item{
-        list-style: none;
-        display: flex;
+  
+    .social-list,
+    .menu-list-item {
+      list-style: none;
+      display: flex;
       justify-content: space-between;
+      order: 1;
     }
-   
-
-    .list-item{
-        padding: 0;
+  
+    .list-item {
+      padding: 0;
+      margin-right: 30px;
     }
-    .list-item:not(:last-child){
-       margin-right: 30px;
+  
+    .wrapper-orange .container {
+      display: block;
     }
   }
+  
