@@ -69,6 +69,9 @@
 .menu-item-title{
     white-space: nowrap;
     font-size: 1.5rem;
+    font-family: Vollkorn, serif;
+    font-weight: normal;
+    color: var(--text-color);
 }
 @media (max-width: 550px) {
     .menu-item-title{
