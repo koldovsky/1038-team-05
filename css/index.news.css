@@ -17,3 +17,8 @@
 .news__content-wine-card {
     background-image: url(../img/news/wine.webp);
 }
+
+.news__section-name {
+    color: var (--orange-small-text);
+}
+
