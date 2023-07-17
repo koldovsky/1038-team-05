@@ -1,137 +1,193 @@
-.gift-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    background-color: rgba(255, 93, 40, 0.7);
-    padding: 80px 0 100px 0;
-    min-width: 320px;
-    /* gap: 20px; */
+.gift-cards__discount {
+  width: 100%;
+  background-image: url(../img/gift-cards/background-image-gift-cards.png);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: space-around;
 }
 
 .gift-cards__discount-offer {
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
-    padding: 0 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: var(--gift-part-backround-color); */
+  padding: 90px 25px 90px 25px;
+  min-width: 320px;
+  gap: 20px;
 }
 
 .gift-cards__discount-offer-vouchers {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 0 15px 0 15px;
-    
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0 15px 0 15px;
 }
 
 .vouchers__first-subtitle {
-    font-size: 11px;
-    font-weight: 900;
-    color: #f7f6f2;
-    margin-bottom: 15px;
+  font-size: 11px;
+  font-weight: 900;
+  color: var(--gift-part-subtitle-color);
+  margin-bottom: 15px;
 }
 
 .vouchers__title {
-    font-weight: 400;
-    color: var(--text-light-color);
-    margin-bottom: 50px;
+  font-weight: 400;
+  color: var(--text-light-color);
+  margin-bottom: 15px;
+}
+
+.vouchers__line-image {
+  width: 70px;
+  padding-bottom: 35px;
 }
 
 .vouchers__second-subtitle {
-    color: rgba(255, 255, 255, 0.81);
-    font-size: 1.1875rem;
-    margin-bottom: 30px;
-}
-
-.vouchers__conditions-conteiner {
-    display: flex;
-    width: 130px;
-    height: 46px;
-    background-color: #fff;
-    border-style: solid;
-    border-color: #fff;
-    border-radius: 7px 25px 25px 25px;
-    justify-content: center;
-    align-items: center;
+  color: var(--text-light-color);
+  opacity: 0.81;
+  font-size: 1.1875rem;
+  margin-bottom: 30px;
+  font-weight: 500;
 }
 
 .vouchers__conditions {
-    color: rgb(75, 86, 106);
-    font-family: Roboto, sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.vouchers__conditions-conteiner:hover {
-    background-color: rgb(75, 86, 106);
-    border-color: rgb(75, 86, 106);
+  display: flex;
+  width: 130px;
+  height: 46px;
+  background-color: var(--background-light-color);
+  border-style: solid;
+  border-color: var(--background-light-color);
+  border-radius: 7px 25px 25px 25px;
+  justify-content: center;
+  align-items: center;
+  color: var(--background-dark-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .vouchers__conditions:hover {
-    color: #fff;
+  background-color: var(--background-dark-color);
+  border-color: var(--background-dark-color);
+  color: var(--text-light-color);
 }
 
 .gift-cards__discount-offer-cardsconteiner {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  /* padding: 20px 0 20px 0; */
 }
 
 .cardsconteiner__card {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    margin-bottom: 20px;
-    padding: 30px;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-light-color);
+  /* margin-bottom: 20px; */
+  padding: 30px;
+  border-radius: 5px;
 }
 
 .cardsconteiner__card-image {
-    width: 50px;
-    padding-bottom: 15px;
+  width: 50px;
+  padding-bottom: 15px;
 }
 
 .cardsconteiner__card-title {
-    color: rgb(75, 86, 106);
-    font-weight: normal;
-    font-size: 1.75rem;
-    padding-bottom: 20px;
+  color: var(--title-color);
+  font-weight: 500;
+  font-size: 1.75rem;
+  padding-bottom: 20px;
 }
 
 .cardsconteiner__card-text {
-    color: rgb(155, 158, 164);
-    line-height: 24px;
-    padding-bottom: 20px;
+  display: flex;
+  color: var(--description-text-color);
+  line-height: 24px;
+  padding-bottom: 20px;
 }
 
 .cardsconteiner__card-subtext {
-    color: rgba(130, 134, 143, 0.63);
-    font-style: italic;
-    font-size: 14px;
-    line-height: 20px;
-    padding-bottom: 35px;
+  display: flex;
+  color: var(--subtitle-color);
+  opacity: 0.63;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 35px;
 }
 
 .cardsconteiner__card-subtext-stars {
-    color: rgb(255, 93, 40);
+  color: var(--prices-color);
 }
 
 .cardsconteiner__card-buy {
-    color: rgb(255, 93, 40);
-    font-family: roboto, sans-serif;
-    font-size: 0.68rem;
-    font-weight: 900;
-    letter-spacing: 1.1px;
+  color: var(--prices-color);
+  font-family: roboto, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 1.1px;
 }
 
 .gift-cards__carousel-inner {
-    display: flex;
-    background-color: #373e4a;
-    padding: 20px;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  background-color: var(--carousel-background-color);
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
 }
 
 .gift-cards__carousel-item-image {
-    width: 250px;
+  width: 250px;
 }
 
+@media (min-width: 768px) {
+  .gift-cards__discount-offer-vouchers {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .vouchers__title {
+    font-size: 2.375rem;
+  }
+  .gift-cards__discount-offer-cardsconteiner {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .cardsconteiner__card {
+    align-items: center;
+  }
+
+  .cardsconteiner__card-text {
+    text-align: center;
+  }
+
+  .cardsconteiner__card-subtext {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .gift-cards__discount-offer {
+    max-width: 1024px;
+    flex-direction: row;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 25px;
+    justify-content: space-around;
+  }
+
+  .gift-cards__discount-offer-vouchers {
+    max-width: 350px;
+    height: 100%;
+    align-content: space-between;
+    justify-content: space-between;
+  }
+
+  .vouchers__title {
+    font-size: 2.625rem;
+  }
+}
