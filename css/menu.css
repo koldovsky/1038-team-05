@@ -59,6 +59,7 @@
 .menu-item-title-price{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 @media (max-width: 460px) {
     .menu-item-title-price{
@@ -202,4 +203,8 @@
 .filler-white{
     width: 70px;
     height: 13.67px;
+}
+.underline-item-price{
+    background: url(../img/menu/underline-for-price.jpg);
+    flex-grow: 1;
 }
