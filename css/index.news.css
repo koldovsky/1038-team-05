@@ -3,9 +3,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .news__content {
@@ -17,7 +17,11 @@
 }
 
 .news__content-wine-card {
+    width: 500px;
+    height: 300px;
     background-image: url(../img/news/wine.webp);
+    background: var(--background-gradient);
+    object-fit: contain;
 }
 
 .news__section-name {
@@ -27,7 +31,7 @@
     font-family: Roboto, sans-serif;
     display: flex;
     justify-content: center;
-    }
+}
 
 .news__main-title {
     display: flex;
@@ -43,8 +47,36 @@
     justify-content: center;
     font-weight: 500;
     font-family: Roboto, sans-serif;
-    color: var(--title-color);
+    color: var(--subtitle-color);
     font-size: 19px;
-    font-style: normal; 
+    font-style: normal;
 }
 
+.underline_line {
+    display: flex;
+    justify-content: center;
+}
+
+.news__content-title {
+    color: var(--background-light-color);
+    text-align: left;
+    font-family: Vollkorn, serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31.2px;
+}
+
+.news__content-text {
+    color: var(--news-text-color);
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 24.28px;
+}
+
+.news__content-link {
+    font-family: Roboto, sans-serif;
+    font-size: 11px;
+    text-decoration: underline;
+    color: var(--prices-color);
+    cursor: pointer;
+}
