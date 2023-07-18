@@ -10,7 +10,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: var(--gift-part-backround-color); */
   padding: 90px 25px 90px 25px;
   min-width: 320px;
   gap: 20px;
@@ -75,14 +74,12 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
-  /* padding: 20px 0 20px 0; */
 }
 
 .cardsconteiner__card {
   display: flex;
   flex-direction: column;
   background-color: var(--background-light-color);
-  /* margin-bottom: 20px; */
   padding: 30px;
   border-radius: 5px;
 }
@@ -131,7 +128,6 @@
 .gift-cards__carousel-inner {
   display: flex;
   flex-wrap: wrap;
-  /* flex-direction: column; */
   background-color: var(--carousel-background-color);
   padding: 20px;
   gap: 20px;
