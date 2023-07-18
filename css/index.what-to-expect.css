@@ -2,8 +2,13 @@
   display: flex;
   flex-direction: column;
   margin: 15px;
-  
 }
+/*
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+*/
 .what-to-expect__content-small-text {
     text-transform: uppercase;
     font-size: 11px;
@@ -16,10 +21,11 @@
 .what-to-expect__content-title {
     font-family: Vollkorn, serif;
     font-size: 2.625rem;
-    color: var(--text-color);
+    color: var(--title-color);
     font-weight: normal;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .what-to-expect__content-divider {
     width: 70px;
@@ -28,19 +34,18 @@
 }
 .what-to-expect__content-description {
     font-size: 1.18rem;
-    color: rgb(130, 134, 143);
+    color: var(--subtitle-color);
     font-family: Roboto, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .what-to-expect__cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
-    
 }
 .what-to-expect__cards-item {
     display: flex;
@@ -50,10 +55,9 @@
 }
 .item__title {
     font-size: 1.5rem;
-    color: rgb(75, 86, 106);
+    color: var(--title-color);
     font-family: Vollkorn, serif;
     font-weight:400;
-
 }
 .item__photo {
     width: 92px;
@@ -66,7 +70,6 @@
 }
 .item__subtext {
     font-size: 1.06rem;
-    color: rgb(155, 158, 164);
+    color: var(--subtitle-color);
     font-weight:400;
 }
-
