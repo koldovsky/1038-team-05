@@ -1,5 +1,6 @@
 footer {
   background-color: var(--gift-part-subtitle-color);
+  padding: 10px;
 }
 .footer__cards {
   display: flex;
@@ -34,22 +35,27 @@ footer {
   text-decoration: underline;
   font-weight: 700;
 }
-.social__list {
+.footer__social-list {
   display: flex;
   flex-direction: row;
   list-style: none;
 
 }
-.social__list-item {
+.footer__social-list {
 }
-.social__list-link {
+.footer__social-list-item {
 }
-.social_svg {
+.footer__social-svg {
   width: 26px;
   fill: var(--orange-small-text);
   margin: 6px;
 }
-.social_svg:hover {
+.footer__social-svg:hover {
   fill: #FF2700;
   transition: 0.5s;
+}
+.footer__navigation-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #FF2700;
 }
