@@ -1,4 +1,4 @@
-/* .backdrop {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -23,6 +23,10 @@
   visibility: hidden;
 }
 
+.backdrop{
+  background-color: #f7f6f2;;
+}
+
 .modal {
     position: relative;
     margin: 0 auto;
@@ -33,7 +37,7 @@
   
     padding: 40px;
   
-    background-color: aqua;
+    /* background-color: #f7f6f2;; */
   
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
@@ -42,4 +46,61 @@
     }
     }
 
-     */
+    /* 12345678 */
+    .logo-link{
+      position: absolute;
+      z-index: 10;
+      left: 0;
+      top: 0;
+      }
+
+     .list-logo-btn-modal{
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 99;
+     }
+
+    .list-logo{
+      position: relative;
+     
+    }
+
+    @media (min-width: 990px) {
+      .logo-link{
+        position: static;
+        z-index: 0;
+    }
+    .list-logo{
+      position: static;
+    }
+  }
+
+ 
+
+  .list-logo-item-modal {
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 24px;
+    background-color: var(--secondary-color);
+  }
+  
+  .llist-logo-item-modal::before,
+  .list-logo-item-modal::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    content: " ";
+    height: 2px;
+    width: 24px;
+    background-color: var(--secondary-color);
+  }
+
+  .list-logo-item-modal::before {
+    top: 5px;
+  }
+  
+  .list-logo-item-modal::after {
+    bottom: 5px;
+  }
