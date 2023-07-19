@@ -2,6 +2,7 @@
   .menu-item {
     text-decoration: none;
   }
+ 
   
   .list-item {
     font-size: 1.0625rem;
@@ -75,7 +76,7 @@
     align-items: center;
   }
   
-  .list-logo-btn {
+  .list-logo-btn, .list-logo-btn-modal {
     height: 40px;
     width: 40px;
     border: 0;
@@ -159,6 +160,11 @@
     .menu-list{
       display: block;
     }
+    /* .logo-link{
+      position: static;
+      z-index: 0;
+      
+    } */
   
   }
   
