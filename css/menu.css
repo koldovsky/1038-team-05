@@ -207,7 +207,6 @@
     display: flex;
     justify-content: left;
     flex-direction: column;
-    
 }
 
 .menu--reserve-title {
@@ -243,4 +242,28 @@
 .menu--underline-item-price{
     background: url(../img/menu/underline-for-price.jpg);
     flex-grow: 1;
+}
+
+.menu--reserve-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.menu--reserve-div{
+    float: left;
+    justify-content: left;
+    min-width: 1376px;
+}
+@media (max-width: 1490px) {
+    .menu--reserve-div {
+        min-width: 278px;
+    }
+    .menu--reserve-container {
+        justify-content: unset;
+        align-items: unset;
+    }
 }
