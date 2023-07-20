@@ -3,16 +3,11 @@
   flex-direction: column;
   margin: 15px;
 }
-/*
-.container {
-    max-width: 1100px;
-    margin: auto;
-}
-*/
+
 .what-to-expect__content-small-text {
     text-transform: uppercase;
     font-size: 11px;
-    color: var(--orange-small-text);
+    color: var(--small-text);
     font-family: Roboto, sans-serif;
     font-weight: 700;
     display: flex;
@@ -65,7 +60,7 @@
 .item__divider {
     width: 52px;
     height: 3px;
-    background-color:var(--orange-small-text) ;
+    background-color:var(--small-text) ;
     margin: 15px 0 15px 0;
 }
 .item__subtext {

@@ -67,7 +67,7 @@ footer {
 
 .footer__social-svg {
   width: 26px;
-  fill: var(--orange-small-text);
+  fill: var(--small-text);
   margin: 6px;
 }
 
@@ -99,7 +99,7 @@ footer {
   margin: 5px 0 5px 0;
   width: 120px;
   height: 3px;
-  background-color: var(--orange-small-text);
+  background-color: var(--small-text);
 }
 
 .footer__item-list {

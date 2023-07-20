@@ -8,7 +8,7 @@
 
 :root {
     scroll-behavior: smooth;
-    --orange-small-text: #ff5d36;
+    --small-text: #ff5d36;
     --prices-color: rgb(255, 93, 40);
     --title-color: #4B566A;
     --text-light-color: #fff;

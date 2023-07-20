@@ -9,7 +9,7 @@
 .categories__first-subtitle {
     font-size: 11px;
     font-family: Roboto, sans-serif;
-    color: var(--orange-small-text);
+    color: var(--small-text);
     text-align: center;
     font-weight: 700;
 }
@@ -113,7 +113,7 @@
 .categories__first-button {
     background-color: var(--background-light-color);
     border-style: 2px solid;
-    color: var(--orange-small-text);
+    color: var(--small-text);
     font-size: 16px;
     border-color: var(--buttons-color);
     border-radius: 7px 25px 25px 25px;
