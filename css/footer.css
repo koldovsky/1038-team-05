@@ -146,7 +146,6 @@ footer {
   flex-direction: row;
   justify-content: left;
   align-items: center;
-
 }
 
 .footer__contact-svg {
@@ -236,15 +235,13 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
   }
-.footer__author-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
+  .footer__author-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   .footer__item-divider {
     width: 100%;
   }
-
 }
