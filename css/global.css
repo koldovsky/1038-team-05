@@ -8,7 +8,7 @@
 
 :root {
     scroll-behavior: smooth;
-    --orange-small-text: #ff5d36;
+    --small-text: #ff5d36;
     --prices-color: rgb(255, 93, 40);
     --title-color: #4B566A;
     --text-light-color: #fff;
@@ -31,6 +31,7 @@
     --offers-text-color-title-subtext: rgb(255, 93, 40);
     --offers-text-color-text: rgb(155, 158, 164);
     --offers-text-color-subtext: rgb(130, 134, 143);
+    --footer-divider-color: rgb(130, 134, 143, 0.3);
 }
 
 .img {
