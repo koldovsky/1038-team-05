@@ -31,6 +31,7 @@
     --offers-text-color-title-subtext: rgb(255, 93, 40);
     --offers-text-color-text: rgb(155, 158, 164);
     --offers-text-color-subtext: rgb(130, 134, 143);
+    --offers-color-background:rgb(250,250,250);
     --footer-divider-color: rgb(130, 134, 143, 0.3);
 }
 
