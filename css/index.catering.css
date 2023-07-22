@@ -1,0 +1,97 @@
+.catering {
+    display: flex;
+}
+
+.catering__photo {
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    object-fit: cover; /* Заповнимо контейнер фото, зберігаючи його пропорції */
+    object-position: center;
+}
+
+.catering__content {
+    margin-top: 120px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.catering__content--subtitle {
+    color: var(--small-text);
+    font-weight: bold;
+}
+
+.catering__content--title {
+    color: var(--title-color);
+}
+
+.catering__content--text-upper {
+    font-weight: bold;
+    color: var(--description-text-color);
+}
+
+.catering__content--text-lower {
+    color: var(--description-text-color);
+    font-weight: 500;
+}
+
+.catering__content--line {
+    margin-bottom: 5px;
+}
+
+.catering__content--box {
+    display: flex;
+    margin-top: 35px;
+}
+
+.catering__content--img {
+    width: 70px;
+    height: 70px;
+    margin-right: 15px;
+}
+
+.catering__content--headline {
+    font-family: Vollkorn, serif;
+    color: var(--title-color);
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .catering {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .catering__photo {
+        max-height: 425px;
+        max-width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .catering__photo {
+        max-height: 325px;
+    }
+    .catering__content {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 600px) {
+    .catering__photo {
+        max-height: 375px;
+    }
+    .catering__content {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 700px) {
+    .catering__photo {
+        max-height: 400px;
+    }
+    .catering__content {
+        margin-top: 20px;
+    }
+}
+@media (min-width: 700px) {
+    .catering__photo {
+        max-width: 100%;
+    }

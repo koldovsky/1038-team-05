@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Vollkorn:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +8,46 @@
 
 :root {
     scroll-behavior: smooth;
-    --orange-small-text: #FF9628;;
-    --text-color: #4B566A;
+    --small-text: #ff5d36;
+    --prices-color: rgb(255, 93, 40);
+    --title-color: #4B566A;
+    --text-light-color: #fff;
+    --subtitle-color: rgb(130, 134, 143);
+    --background-light-color: #fff;
+    --background-dark-color: rgb(75, 86, 106);
+    --description-text-color: rgb(155, 158, 164);
+    --gift-part-backround-color: rgba(255, 93, 40, 0.8);
+    --gift-part-subtitle-color: #f7f6f2;
+    --carousel-background-color: #373e4a;
+    --buttons-color: #ff5d28;
+    --background-gradient:linear-gradient(0deg, rgb(55, 62, 74) 0%, rgba(75, 86, 106, 0) 100%);
+    --news-text-color:rgba(247,246,242,0.81);
+    --primary-color: #a63a18;
+    --secondary-color: #82868f;
+    --background-color: #f7f6f2;
+    --accent-color: #ff5d28;
+    --hover-social-color:#FFA500;
+    --offers-text-color-title: rgb(75, 86, 106);
+    --offers-text-color-title-subtext: rgb(255, 93, 40);
+    --offers-text-color-text: rgb(155, 158, 164);
+    --offers-text-color-subtext: rgb(130, 134, 143);
+    --footer-divider-color: rgb(130, 134, 143, 0.3);
+}
+
+.img {
+    display: block;
+    width: 100%;
 }
 
 body {
     background-color: #FFFFFF;
+}
+
+h2 {
+    font-family: Vollkorn, serif;
+    font-size: 2.125rem;
+}
+
+p {
+    font-family: Roboto, sans-serif;
 }
