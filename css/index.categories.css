@@ -1,20 +1,20 @@
-.categories{
-    padding: 95px 0px 30px 0px;    
+.categories {
+    padding: 95px 0px 30px 0px;
 }
-@media (min-width: 768px){
-    .categories{
+@media (min-width: 768px) {
+    .categories {
         padding: 105px 0px 30px 0px;
     }
 }
 .categories__first-subtitle {
     font-size: 11px;
     font-family: Roboto, sans-serif;
-    color: var(--orange-small-text);
+    color: var(--small-text);
     text-align: center;
     font-weight: 700;
 }
 .categories__title {
-    font-size: 46px;
+    font-size: 2.125rem;
     font-family: Vollkorn, serif;
     color: var(--title-color);
     text-align: center;
@@ -35,53 +35,98 @@
         justify-content: center;
     }
 }
-
-
-
-
-.column-one {
+.categories__main-photo {
+    background-image: url(../img/categories/categories-mainphoto.jpg);
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.categories__menu {
+    padding: 30px 24px 0px 24px;
+}
+.categories__menu-column-one {
     padding: 0px 15px;
 }
-.column-two {
+.categories__menu-column-two {
     margin-top: 50px;
     padding: 0px 15px;
 }
 @media (min-width: 768px) {
-    .menu{
-        display: grid;
-
+    .categories__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 30px;
     }
-    .column-two {  
-        margin-top: 0px;      
+    .categories__menu-column-one {
+        display: flex;
+        flex-direction: column;
         padding: 0px 15px;
     }
-    .test{
-        display: block;
+    .categories__menu-column-two {
+        margin-top: 0px;
+        padding: 0px 15px;
+        display: flex;
+        flex-direction: column;
     }
 }
-.item__ingredients {
-    display: block;
+.categories__menu-item-name {
+    font-size: 1.375rem;
+    font-family: Vollkorn, serif;
+    font-weight: 400;
+    color: var(--title-color);
 }
-
-
-.first-button {
+.categories__menu-item-price {
+    font-size: 1.25rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    color: var(--prices-color);
+}
+.categories__menu-item-ingredients {
+    font-size: 1.0625rem;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    color: var(--description-text-color);
+}
+@media (min-width: 768px) {
+    .categories__menu-item-name {
+        font-size: 1.5rem;
+    }
+    .categories__menu-item-price {
+        font-size: 1.3125rem;
+    }
+}
+.categories__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 50px;
+}
+@media (max-width: 388px) {
+    .categories__buttons {
+        padding-top: 50px;
+        flex-direction: column;
+        margin: auto;
+        width: 50%;
+    }
+}
+.categories__first-button {
     background-color: var(--background-light-color);
     border-style: 2px solid;
-    color: var(--orange-small-text);
+    color: var(--small-text);
     font-size: 16px;
-    border-color: var(--buttons-color);    
+    border-color: var(--buttons-color);
     border-radius: 7px 25px 25px 25px;
-    width: 130px;
+    width: 156px;
     height: 46px;
 }
-.second-button {
+.categories__second-button {
     background-color: var(--buttons-color);
-    border-style: solid; 
-    border: none;      
+    border-style: solid;
+    border: none;
     font-size: 16px;
     color: var(--text-light-color);
     border-radius: 7px 25px 25px 25px;
-    width: 130px;
+    width: 164px;
     height: 46px;
 }
-

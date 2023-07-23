@@ -1,0 +1,50 @@
+.book-a-table {
+    text-align: center;
+    background-image: url(../img/book-a-table/background.png);
+    margin: 30px 0;
+}
+
+.book-a-table__subtitle {
+    color: var(--small-text);
+    font-weight: bold;
+}
+
+.book-a-table__title {
+    color: var(--text-light-color);
+    font-size: 3.5rem;
+}
+
+.book-a-table__text {
+    font-weight: bold;
+    color: var(--description-text-color);
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.book-a-table__container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin: 0 5px;
+}
+
+.book-a-table__button {
+    display: flex;
+    height: 42.08px;
+    width: 125.84px;
+    background-color: var(--prices-color);
+    border-radius: 7px 25px 25px 25px;
+    justify-content: center;
+    margin: 10px auto; 
+    align-items: center;
+    text-align: center;
+    line-height: 22.08px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+}
+
+.book-a-table__button:hover {
+    background-color: #da5326;
+}

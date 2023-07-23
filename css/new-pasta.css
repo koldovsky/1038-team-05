@@ -1,0 +1,35 @@
+.all-pasta{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family:'Roboto',sans-serif;
+
+
+}
+
+.all-inn{
+    background-image: url(/img/new-pasta/new-pasta-backround.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
+.body{
+    text-align: center;
+    
+}
+
+.first-food{
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-top: 30px;
+    background: white;
+}
+
+.new-pasta{
+    font-size: 14px;
+    color: rgb(255, 93, 40);
+}
+.italian-days{
+    font-family: 'Vollkorn';
+}

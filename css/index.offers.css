@@ -1,21 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
 .offers {
     margin: 0;
     padding: 0;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    --text-color-title: rgb(75, 86, 106);
-    --text-color-title-subtext: rgb(255, 93, 40);
-    --text-color-text: rgb(155, 158, 164);
-    --text-color-subtext: rgb(130, 134, 143);
-    --w-100vw: 100vw;
-    --w-content-gutter: var(--content-gutter-480);
-    --w-content-container-size: 1200px;
-    --content-gutter-480: 24px;
-    --content-gutter-768: 32px;
-    --content-gutter-992: 40px;
-    --content-gutter-1280: 15px;
 }
 
 .offers__background {
@@ -23,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: var(--offers-color-background);
     display: block;
 }
 
@@ -48,47 +35,52 @@
 
 .offers__background__padding__margin {
     width: 100%;
-    max-width: var(--w-content-container-size);
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 var(--w-content-gutter);
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 @media (min-width: 0px) {
     .offers__background__padding__margin {
-        --w-content-gutter: var(--content-gutter-480)
+        padding-left: 24px;
+        padding-right: 24px;
     }
 }
 
 @media (min-width: 768px) {
     .offers__background__padding__margin {
-        --w-content-gutter: var(--content-gutter-768)
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
 @media (min-width: 992px) {
     .offers__background__padding__margin {
-        --w-content-gutter: var(--content-gutter-992)
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
 @media (min-width: 1280px) {
     .offers__background__padding__margin {
-        --w-content-gutter: var(--content-gutter-1280)
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
 .offer__title__subtitle {
-    color: var(--text-color-title-subtext);
+    color: var(--offers-text-color-title-subtext);
     text-align: center;
 }
 
 .offer__title__name {
-    color: var(--text-color-title);
+    color: var(--offers-text-color-title);
     text-align: center;
 }
 
 .offer__title__text {
-    color: var(--text-color-title);
+    color: var(--offers-text-color-title);
     text-align: center;
 }
 
@@ -117,7 +109,7 @@
 }
 
 .offer__list__info {
-    background-color: white;
+    background-color: var(--offers-color-background);
     width: 389.984px;
     height: 389.984px;
 }
@@ -150,16 +142,16 @@
 }
 
 .offer__list__subtitle {
-    color: var(--text-color-subtext);
+    color: var(--offers-text-color-subtext);
     text-align: center;
 }
 
 .offer__list__title {
-    color: var(--text-color-title);
+    color: var(--offers-text-color-title);
     text-align: center;
 }
 
 .offer__list__text {
-    color: var(--text-color-text);
+    color: var(--offers-text-color-text);
     text-align: center;
 }
