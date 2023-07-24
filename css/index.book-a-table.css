@@ -1,6 +1,7 @@
 .book-a-table {
     text-align: center;
     background-image: url(../img/book-a-table/background.png);
+    background-position-x: 100%;
     margin: 30px 0;
 }
 
