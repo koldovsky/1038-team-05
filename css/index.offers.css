@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: var(--offers-color-background);
     display: block;
 }
 
@@ -109,7 +109,7 @@
 }
 
 .offer__list__info {
-    background-color: white;
+    background-color: var(--offers-color-background);
     width: 389.984px;
     height: 389.984px;
 }

@@ -4,7 +4,7 @@
   justify-content: space-around;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: center center;
   padding: 8px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .about-us__first-subtitle {
-  color: var(--orange-small-text);
+  color: var(--small-text);
   font-size: 11px;
   margin-top: 50px;
   text-align: left;

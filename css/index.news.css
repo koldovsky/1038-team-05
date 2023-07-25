@@ -9,10 +9,10 @@
     position: relative;
     padding-top: 95px;
     padding-bottom: 30px;
-    }
+}
 
 .news__section-name {
-    color: var(--orange-small-text);
+    color: var(--small-text);
     font-size: 0.6875rem;
     font-weight: 900;
     font-family: Roboto, sans-serif;
@@ -55,21 +55,32 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }*/
 
+@media (min-width: 992px) {
+    .news__content-wine-card,
+    .news__content-mussel-and-meat-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 .news__content-wine-card {
-    width: 17rem;
-    height: 30.8945rem;
+    /*width: 17rem;*/
+    min-height: 494px;
     background-image: var(--background-gradient), url(../img/news/wine.jpg);
     background-position: center;
     background-size: cover;
+    /*background-repeat: no-repeat;*/
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: flex-end;
     border-radius: 6px;
-    }
+}
 
 .news__content-title-wine-card {
     color: var(--background-light-color);
@@ -109,8 +120,16 @@
     margin-top: 30px;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
+    /*display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;*/
+}
+
+@media (min-width: 768px) {
+    .news__content-mussel-and-meat-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .news__content-title {
@@ -152,32 +171,6 @@
 
 .news__content-mussel-card img,
 .news__content-meat-card img {
-  width: 300px;
+    height: 11.39rem;
+    width: 17rem;
 }
-@media (min-width: 768px) {
-    .news__content-mussel-card,
-    .news__content-meat-card {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-      scrollbar-width: thin;
-    }
-  
-    .news__content-mussel-card,
-    .news__content-meat-card {
-      flex: 0 0 auto;
-      width: 50%;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  }
-
-  @media (max-width: 992px) {
-    .news__content-mussel-card,
-    .news__content-meat-card,
-    .news__content-wine-card {
-      flex: 0 0 100%;
-      width: 100%;
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }

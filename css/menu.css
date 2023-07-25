@@ -1,7 +1,7 @@
 .menu--menu-title {
     text-transform: uppercase;
     font-size: 0.6875rem;
-    color: var(--orange-small-text);
+    color: var(--small-text);
     font-family: Roboto, sans-serif;
     font-weight: 700;
     display: flex;
@@ -212,7 +212,7 @@
 .menu--reserve-title {
     text-transform: uppercase;
     font-size: 0.6875rem;
-    color: var(--orange-small-text);
+    color: var(--small-text);
     font-family: Roboto, sans-serif;
     font-weight: 700;
     display: flex;
