@@ -35,7 +35,7 @@ function giveMeFive(obj) {
 
 function buildFun(n) {
   const res = [];
-  for (const i = 0; i < n; i++) {
+  for (let i = 0; i < n; i++) {
     const tmp = i;
     res.push(function () {
       return tmp;
