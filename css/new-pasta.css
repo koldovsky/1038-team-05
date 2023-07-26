@@ -18,39 +18,3 @@
     text-align: center;
     
 }
-
-.first-food{
-    box-sizing: border-box;
-    margin-left: 200px;
-    margin-top: 80px;
-    margin-right: 80px;
-    margin-bottom: 30px;
-    background: white;
-    overflow: hidden;
-    max-width: fit-content;
-    width: 100%;
-}
-
-.pasta{
-    font-size: small;
-    font-family:'Roboto';
-    margin-top: 10px;
-}
-
-.photo1{
-    float: left;
-}
-
-
-.photo2{
-    float: left;
-}
-
-.new-pasta{
-    font-size: 14px;
-    color: rgb(255, 93, 40);
-}
-
-.italian-days{
-    font-family: 'Vollkorn';
-}
