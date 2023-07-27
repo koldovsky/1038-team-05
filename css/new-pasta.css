@@ -18,18 +18,3 @@
     text-align: center;
     
 }
-
-.first-food{
-    box-sizing: border-box;
-    margin-left: 50px;
-    margin-top: 30px;
-    background: white;
-}
-
-.new-pasta{
-    font-size: 14px;
-    color: rgb(255, 93, 40);
-}
-.italian-days{
-    font-family: 'Vollkorn';
-}
