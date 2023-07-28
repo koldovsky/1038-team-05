@@ -149,6 +149,7 @@
   border: none;
   background-color: rgba(0, 0, 0, 0);
   font-size: 25px;
+  padding: 0 10px;
 }
 
 .gift-cards__carousel-item {
@@ -158,7 +159,8 @@
 }
 
 .gift-cards__carousel-item-image {
-  width: 90%;
+  width: 100%;
+  max-width: 250px;
 }
 
 @media (min-width: 768px) {
