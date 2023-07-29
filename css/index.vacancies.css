@@ -1,0 +1,501 @@
+.vacancies {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+}
+
+.vacancies__blocks__background {
+    background-image: url('../img/about-us/vacancies/vacancies-background.svg');
+    box-sizing: border-box;
+    display: block;
+    background-attachment: scroll, scroll;
+    background-clip: border-box, border-box;
+    background-color: var(--vacancies-background-color);
+    background-origin: padding-box, padding-box;
+    background-position-x: 49.06%, 0%;
+    background-position-y: 39.31%, 0%;
+    background-size: cover, auto;
+}
+
+.vacancies__blocks__padding {
+    box-sizing: border-box;
+    display: block;
+    flex-basis: 100%;
+    flex-shrink: 0;
+    min-width: 320px;
+    padding-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 95px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .vacancies__blocks__padding {
+        padding-bottom: 120px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 120px;
+    }
+}
+
+.vacancies__blocks__padding__margin {
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    max-width: 1200px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+}
+
+@media (min-width: 0px) {
+    .vacancies__blocks__padding__margin {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .vacancies__blocks__padding__margin {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media (min-width: 992px) {
+    .vacancies__blocks__padding__margin {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .vacancies__blocks__padding__margin {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.vacancies__title {
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.vacancies__title__subtitle {
+    box-sizing: border-box;
+    display: inline;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1.1px;
+    line-height: 15.73px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--vacancies__title__subtitle);
+}
+
+.vacancies__title__name__margin {
+    box-sizing: border-box;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.vacancies__title__name {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    font-family: Vollkorn, serif;
+    font-stretch: 100%;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40.8px;
+    text-align: center;
+    color: var(--vacancies__title__name);
+}
+
+@media (min-width: 768px) {
+    .vacancies__title__name {
+        font-size: 38px;
+        line-height: 45.6px;
+    }
+}
+
+@media (min-width: 992px) {
+    .vacancies__title__name {
+        font-size: 42px;
+        line-height: 50.4px;
+    }
+}
+
+.vacancies__title__name::after {
+    box-sizing: border-box;
+    display: block;
+    content: url('../img/about-us/vacancies/line.jpg');
+    margin-top: 10px;
+}
+
+.vacancies__title__text {
+    box-sizing: border-box;
+    display: inline;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 26.6px;
+    text-align: center;
+    vertical-align: baseline;
+    color: var(--vacancies__title__text);
+}
+
+.vacancies__subgrid {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .vacancies__subgrid {
+        margin-top: 20px;
+    }
+}
+
+.vacancies__grid {
+    box-sizing: border-box;
+    display: block;
+    justify-content: center;
+}
+
+.vacancies__grid__inner {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1170px;
+}
+
+.vacancies__grid__list {
+    box-sizing: border-box;
+    display: block;
+    margin-top: 45px;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: var(--vacancies__grid__list);
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.vacancies__grid__cook {
+    box-sizing: border-box;
+    display: block;
+    margin-top: 50px;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: var(--vacancies__grid__list);
+    background-image: none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+@media (min-width: 768px) {
+
+    .vacancies__grid__list,
+    .vacancies__grid__cook {
+        margin-top: 30px;
+    }
+}
+
+.vacancies__grid__list__padding {
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 0;
+    padding-bottom: 31px;
+    padding-left: 39px;
+    padding-right: 39px;
+    padding-top: 31px;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .vacancies__grid__list__padding {
+        padding-bottom: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 40px;
+    }
+}
+
+.vacancies__list__inner {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.vacancies__list__inner__image {
+    box-sizing: border-box;
+    display: flex;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    list-style-position: outside;
+    justify-content: flex-start;
+    overflow: hidden;
+    flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+    .vacancies__list__inner__image {
+        justify-content: center;
+        align-items: center;
+        flex-basis: 16.66667%;
+        max-width: 16.66667%;
+    }
+}
+
+.vacancies__image {
+    box-sizing: border-box;
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+@media (min-width: 768px) {
+    .vacancies__image {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+.vacancies__list__inner__text {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    flex-direction: column;
+    list-style-position: outside;
+    flex-basis: 100%;
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .vacancies__list__inner__text {
+        justify-content: center;
+        align-items: center;
+        flex-basis: 25%;
+        max-width: 25%;
+        margin-top: 0;
+    }
+}
+
+.vacancies__inner__text__cook {
+    box-sizing: border-box;
+    display: flex;
+    margin: 0;
+    list-style-position: outside;
+    font-family: Vollkorn, serif;
+    font-size: 22px;
+    line-height: 28.6px;
+    font-stretch: 100%;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: baseline;
+    color: var(--vacancies__inner__text__cook);
+}
+
+@media (min-width: 768px) {
+    .vacancies__inner__text__cook {
+        font-size: 26px;
+        line-height: 33.8px;
+    }
+}
+
+.vacancies__inner__text__month {
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0;
+    list-style-position: outside;
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-stretch: 100%;
+    font-weight: 400;
+    line-height: 24.48px;
+    text-align: center;
+    vertical-align: baseline;
+    color: var(--vacancies__inner__text__month);
+}
+
+.vacancies__list__inner__svg {
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: 100%;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    min-width: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .vacancies__list__inner__svg {
+        justify-content: center;
+        flex-basis: 33.33333%;
+        max-width: 33.33333%;
+        margin-top: 0;
+    }
+}
+
+.vacancies__inner__svg__box {
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+.vacancies__inner__svg__box__end {
+    box-sizing: border-box;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.vacancies__inner__svg {
+    box-sizing: border-box;
+    display: block;
+    width: 20px;
+    height: 24px;
+    overflow: hidden;
+    color: var(--vacancies__inner__svg);
+    fill: var(--vacancies__inner__svg);
+    list-style-position: outside;
+    overflow-clip-margin: content-box;
+}
+
+.vacancies__inner__svg__text {
+    box-sizing: border-box;
+    display: block;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20.7px;
+    text-align: left;
+    color: var(--vacancies__inner__svg__text);
+    list-style-position: outside;
+}
+
+.vacancies__list__inner__button {
+    box-sizing: border-box;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-start;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    list-style-position: outside;
+    margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+    .vacancies__list__inner__button {
+        align-items: center;
+        justify-content: center;
+        flex-basis: 25%;
+        max-width: 25%;
+        margin-top: 0;
+    }
+}
+
+.vacancies__inner__button {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 10px;
+    max-width: 100%;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-bottom: 12px;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 12px;
+    position: relative;
+    line-height: 22.08px;
+    text-align: center;
+    text-decoration-color: var(--vacancies__inner__button__text);
+    vertical-align: middle;
+    color: var(--vacancies__inner__button__text);
+    background-color: var(--vacancies__inner__button);
+    background-position-x: 50%;
+    background-position-y: 50%;
+    cursor: pointer;
+    transition-delay: 0;
+    transition-duration: 0.2s;
+    transition-property: color, background-color, border-color, box-shadow, -webkit-box-shadow;
+    transition-timing-function: ease-in, ease-in, ease-in, ease-in, ease-in;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 25px;
+    list-style-position: outside;
+}
+
+.vacancies__inner__button__link {
+    line-height: 22.08px;
+    text-align: center;
+    text-decoration-color: var(--vacancies__inner__button__text);
+    text-decoration-line: none;
+    color: var(--vacancies__inner__button__text);
+    cursor: pointer;
+    list-style-position: outside;
+}
+
+.vacancies__inner__button__text {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.08px;
+    text-align: center;
+    vertical-align: baseline;
+    color: var(--vacancies__inner__button__text);
+    list-style-position: outside;
+}
