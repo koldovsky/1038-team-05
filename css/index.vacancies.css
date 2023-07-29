@@ -9,9 +9,7 @@
     box-sizing: border-box;
     display: block;
     background-attachment: scroll, scroll;
-    background-clip: border-box, border-box;
     background-color: var(--vacancies-background-color);
-    background-origin: padding-box, padding-box;
     background-position-x: 49.06%, 0%;
     background-position-y: 39.31%, 0%;
     background-size: cover, auto;
