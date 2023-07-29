@@ -20,13 +20,13 @@
     --gift-part-subtitle-color: #f7f6f2;
     --carousel-background-color: #373e4a;
     --buttons-color: #ff5d28;
-    --background-gradient:linear-gradient(0deg, rgb(55, 62, 74) 0%, rgba(75, 86, 106, 0) 100%);
-    --news-text-color:rgba(247,246,242,0.81);
+    --background-gradient: linear-gradient(0deg, rgb(55, 62, 74) 0%, rgba(75, 86, 106, 0) 100%);
+    --news-text-color: rgba(247, 246, 242, 0.81);
     --primary-color: #a63a18;
     --secondary-color: #82868f;
     --background-color: #f7f6f2;
     --accent-color: #ff5d28;
-    --hover-social-color:#FFA500;
+    --hover-social-color: #FFA500;
     --offers-text-color-title-subtext: rgb(255, 93, 40);
     --offers-text-color-title: rgb(75, 86, 106);
     --offers-text-color-title-text: rgb(130, 134, 143);
@@ -36,16 +36,16 @@
     --offers-text-color-text: rgb(155, 158, 164);
     --offers-color-button: rgb(255, 93, 40);
     --vacancies-background-color: rgb(247, 246, 242);
-	--vacancies__title__subtitle: rgb(255, 93, 40);
-	--vacancies__title__name: rgb(75, 86, 106);
-	--vacancies__title__text: rgb(130, 134, 143);  
-	--vacancies__grid__list: rgb(255, 255, 255);
-	--vacancies__inner__text__cook: rgb(75, 86, 106);
-	--vacancies__inner__text__month: rgb(155, 158, 164);
-	--vacancies__inner__svg: rgb(255, 93, 40);
-	--vacancies__inner__svg__text: rgb(130, 134, 143);
-	--vacancies__inner__button__text: rgb(255, 255, 255);
-	--vacancies__inner__button: rgb(255, 93, 40);
+    --vacancies__title__subtitle: rgb(255, 93, 40);
+    --vacancies__title__name: rgb(75, 86, 106);
+    --vacancies__title__text: rgb(130, 134, 143);
+    --vacancies__grid__list: rgb(255, 255, 255);
+    --vacancies__inner__text__cook: rgb(75, 86, 106);
+    --vacancies__inner__text__month: rgb(155, 158, 164);
+    --vacancies__inner__svg: rgb(255, 93, 40);
+    --vacancies__inner__svg__text: rgb(130, 134, 143);
+    --vacancies__inner__button__text: rgb(255, 255, 255);
+    --vacancies__inner__button: rgb(255, 93, 40);
     --footer-divider-color: rgb(130, 134, 143, 0.3);
 
 }

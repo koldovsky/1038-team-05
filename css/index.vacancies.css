@@ -1,5 +1,4 @@
 .vacancies {
-    box-sizing: border-box;
     display: block;
     position: relative;
 }
@@ -16,7 +15,6 @@
 }
 
 .vacancies__blocks__padding {
-    box-sizing: border-box;
     display: block;
     flex-basis: 100%;
     flex-shrink: 0;
@@ -39,7 +37,6 @@
 }
 
 .vacancies__blocks__padding__margin {
-    box-sizing: border-box;
     display: block;
     margin-bottom: 0;
     margin-left: auto;
@@ -81,7 +78,6 @@
 }
 
 .vacancies__title {
-    box-sizing: border-box;
     display: flex;
     flex-basis: 100%;
     flex-direction: column;
@@ -91,7 +87,6 @@
 }
 
 .vacancies__title__subtitle {
-    box-sizing: border-box;
     display: inline;
     margin: 0;
     font-family: Roboto, sans-serif;
@@ -105,7 +100,6 @@
 }
 
 .vacancies__title__name__margin {
-    box-sizing: border-box;
     display: block;
     margin-top: 20px;
     margin-bottom: 0;
@@ -113,7 +107,6 @@
 }
 
 .vacancies__title__name {
-    box-sizing: border-box;
     display: block;
     margin: 0;
     font-family: Vollkorn, serif;
@@ -140,14 +133,12 @@
 }
 
 .vacancies__title__name::after {
-    box-sizing: border-box;
     display: block;
     content: url('../img/about-us/vacancies/line.jpg');
     margin-top: 10px;
 }
 
 .vacancies__title__text {
-    box-sizing: border-box;
     display: inline;
     margin-top: 10px;
     margin-bottom: 0;
@@ -161,7 +152,6 @@
 }
 
 .vacancies__subgrid {
-    box-sizing: border-box;
     display: block;
     margin: 0;
 }
@@ -173,13 +163,11 @@
 }
 
 .vacancies__grid {
-    box-sizing: border-box;
     display: block;
     justify-content: center;
 }
 
 .vacancies__grid__inner {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -187,33 +175,25 @@
 }
 
 .vacancies__grid__list {
-    box-sizing: border-box;
     display: block;
     margin-top: 45px;
     background-attachment: scroll;
     background-clip: border-box;
     background-color: var(--vacancies__grid__list);
-    background-image: none;
     background-origin: padding-box;
-    background-position-x: 0%;
-    background-position-y: 0%;
+    background-position: 0%;
     background-repeat: repeat;
-    background-size: auto;
 }
 
 .vacancies__grid__cook {
-    box-sizing: border-box;
     display: block;
     margin-top: 50px;
     background-attachment: scroll;
     background-clip: border-box;
     background-color: var(--vacancies__grid__list);
-    background-image: none;
     background-origin: padding-box;
-    background-position-x: 0%;
-    background-position-y: 0%;
+    background-position: 0%;
     background-repeat: repeat;
-    background-size: auto;
 }
 
 @media (min-width: 768px) {
@@ -225,7 +205,6 @@
 }
 
 .vacancies__grid__list__padding {
-    box-sizing: border-box;
     display: flex;
     flex-basis: 100%;
     flex-direction: column;
@@ -248,7 +227,6 @@
 }
 
 .vacancies__list__inner {
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
@@ -256,7 +234,6 @@
 }
 
 .vacancies__list__inner__image {
-    box-sizing: border-box;
     display: flex;
     padding-bottom: 0;
     padding-left: 15px;
@@ -278,7 +255,6 @@
 }
 
 .vacancies__image {
-    box-sizing: border-box;
     display: block;
     height: 50px;
     width: 50px;
@@ -292,7 +268,6 @@
 }
 
 .vacancies__list__inner__text {
-    box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
     padding-bottom: 0;
@@ -316,7 +291,6 @@
 }
 
 .vacancies__inner__text__cook {
-    box-sizing: border-box;
     display: flex;
     margin: 0;
     list-style-position: outside;
@@ -338,7 +312,6 @@
 }
 
 .vacancies__inner__text__month {
-    box-sizing: border-box;
     display: flex;
     margin-top: 20px;
     margin-bottom: 0;
@@ -354,7 +327,6 @@
 }
 
 .vacancies__list__inner__svg {
-    box-sizing: border-box;
     display: flex;
     flex-basis: 100%;
     padding-bottom: 0;
@@ -377,21 +349,18 @@
 }
 
 .vacancies__inner__svg__box {
-    box-sizing: border-box;
     display: flex;
     margin-bottom: 16px;
     margin-top: 0;
 }
 
 .vacancies__inner__svg__box__end {
-    box-sizing: border-box;
     display: flex;
     margin-bottom: 0;
     margin-top: 0;
 }
 
 .vacancies__inner__svg {
-    box-sizing: border-box;
     display: block;
     width: 20px;
     height: 24px;
@@ -403,7 +372,6 @@
 }
 
 .vacancies__inner__svg__text {
-    box-sizing: border-box;
     display: block;
     margin-left: 10px;
     margin-bottom: 0;
@@ -418,7 +386,6 @@
 }
 
 .vacancies__list__inner__button {
-    box-sizing: border-box;
     display: flex;
     flex-basis: 100%;
     justify-content: flex-start;
@@ -441,12 +408,10 @@
 }
 
 .vacancies__inner__button {
-    box-sizing: border-box;
     display: inline-block;
     margin: 10px;
     max-width: 100%;
-    overflow-x: visible;
-    overflow-y: visible;
+    overflow: visible;
     padding-bottom: 12px;
     padding-left: 26px;
     padding-right: 26px;
@@ -458,13 +423,10 @@
     vertical-align: middle;
     color: var(--vacancies__inner__button__text);
     background-color: var(--vacancies__inner__button);
-    background-position-x: 50%;
-    background-position-y: 50%;
+    background-position: 50% 50%;
     cursor: pointer;
     transition-delay: 0;
     transition-duration: 0.2s;
-    transition-property: color, background-color, border-color, box-shadow, -webkit-box-shadow;
-    transition-timing-function: ease-in, ease-in, ease-in, ease-in, ease-in;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-left-radius: 7px;
@@ -483,7 +445,6 @@
 }
 
 .vacancies__inner__button__text {
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;

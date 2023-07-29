@@ -1,8 +1,5 @@
 .offers {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
+    display: block;
     width: 100%;
 }
 
@@ -37,7 +34,6 @@
 }
 
 .offers__background__padding__margin {
-    box-sizing: border-box;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -73,13 +69,11 @@
 }
 
 .offers__title {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
 
 .offers__title__subtitle {
-    box-sizing: border-box;
     display: inline;
     margin: 0;
     font-family: Roboto, sans-serif;
@@ -93,7 +87,6 @@
 }
 
 .offers__title__name__margin {
-    box-sizing: border-box;
     display: inline;
     margin-top: 20px;
     margin-bottom: 0;
@@ -102,7 +95,6 @@
 }
 
 .offers__title__name {
-    box-sizing: border-box;
     display: inline;
     margin: 0;
     font-family: Vollkorn, serif;
@@ -122,7 +114,6 @@
 }
 
 .offers__title__text {
-    box-sizing: border-box;
     display: inline;
     margin-top: 0;
     margin-bottom: 0;
@@ -135,20 +126,17 @@
 }
 
 .offers__sublist {
-    box-sizing: border-box;
     display: block;
     margin-top: 50px;
 }
 
 .offers__list {
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .offers__box {
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     flex-basis: 100%;
@@ -169,7 +157,6 @@
 }
 
 .offers__box__padding {
-    box-sizing: border-box;
     display: flex;
     flex-basis: 100%;
     flex-direction: column;
@@ -271,7 +258,6 @@
 }
 
 .offers__box__subtitle {
-    box-sizing: border-box;
     display: inline;
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -284,7 +270,6 @@
 }
 
 .offers__box__title {
-    box-sizing: border-box;
     display: inline;
     font-family: Vollkorn, serif;
     font-size: 26px;
@@ -296,7 +281,6 @@
 }
 
 .offers__box__text {
-    box-sizing: border-box;
     display: inline;
     font-family: Roboto, sans-serif;
     font-size: 17px;
@@ -308,20 +292,17 @@
 }
 
 .offers__box__button {
-    box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
     margin-top: 40px;
 }
 
 .offers__box__button__margen {
-    box-sizing: border-box;
     display: block;
     margin: -10px;
 }
 
 .offers__button {
-    box-sizing: border-box;
     display: inline-block;
     margin: 10px;
     max-width: 100%;
@@ -331,9 +312,7 @@
     line-height: 22.08px;
     text-align: center;
     text-decoration-color: var(--offers-background-box-color);
-    text-decoration-line: none;
     text-decoration-style: solid;
-    text-decoration-thickness: auto;
     vertical-align: middle;
     color: var(--offers-background-box-color);
     background-color: var(--offers-color-button);
