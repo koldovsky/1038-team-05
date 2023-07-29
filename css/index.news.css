@@ -1,6 +1,6 @@
 .news__introduction {
     background-image: url(../img/news/background_intro.png);
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -38,9 +38,14 @@
     justify-content: center;
 }
 
-.news__content container {
-    display: flex;
-    flex-direction: column;
+.news__content-main {
+    /*background-image: url(../img/news/background_main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;*/
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .news__introduction-text {
@@ -104,9 +109,9 @@
 }
 
 .news__content-mussel-and-meat-card {
-    margin-top: 30px;
     min-width: 272px;
     min-height: 511.516px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
 }
@@ -154,28 +159,34 @@
     font-weight: 600;
 }
 
-.news__content-mussel-card-image,
-.news__content-meat-card-image {
+.news__mussel-meat-image {
     min-width: 272px;
     min-height: 182.312px;
     display: flex;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    flex-direction: column;
+}
+
+.news__mussel-image,
+.news__meat-image {
+    width: 100%; 
+    height: 100%;
 }
 
 @media (min-width: 768px) {
     .news__content-mussel-and-meat-card {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
         min-width: 687px;
         min-height: 501.516px;
-        gap: 30px;
     }
 
     .news__content-mussel-card,
     .news__content-meat-card {
+        box-sizing: border-box;
+        display: block;
         min-width: 328.5px;
         min-height: 501.516px;
     }
@@ -184,17 +195,16 @@
         margin-top: 0;
     }
 
-    .news__content-mussel-card-image,
-    .news__content-meat-card-image {
+    .news__mussel-meat-image {
         min-width: 328.5px;
         min-height: 220.188px;
     }
 }
 
 @media (min-width: 992px) {
-    .news__content container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .news__content-main {
+        display: flex;
+        flex-direction: row;
         min-width: 895px;
         min-height: 541.188px;
         gap: 30px;
@@ -211,8 +221,7 @@
         min-height: 541.188px;
     }
 
-    .news__content-mussel-card-image,
-    .news__content-meat-card-image {
+    .news__mussel-meat-image {
         min-width: 282.5px;
         min-height: 189.359px;
     }
