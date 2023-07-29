@@ -445,6 +445,7 @@
 }
 
 .vacancies__inner__button__text {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
