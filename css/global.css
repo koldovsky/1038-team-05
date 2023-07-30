@@ -46,6 +46,9 @@
     --vacancies__inner__svg__text: rgb(130, 134, 143);
     --vacancies__inner__button__text: rgb(255, 255, 255);
     --vacancies__inner__button: rgb(255, 93, 40);
+    --contacts__title__background__orange: rgb(255, 93, 40);
+    --contacts__title__orange__text: rgba(247, 246, 242, 0.62);
+    --contacts__title__orange__text__location: rgba(247, 246, 242, 0.85);
     --footer-divider-color: rgb(130, 134, 143, 0.3);
 
 }
