@@ -63,7 +63,7 @@
     line-height: 66px;
     text-align: center;
     vertical-align: baseline;
-    color: var(--contacts__title__background);
+    color: var(--contacts__title__name);
 }
 
 .contacts__orange__text {

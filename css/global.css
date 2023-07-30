@@ -47,9 +47,11 @@
     --vacancies__inner__button__text: rgb(255, 255, 255);
     --vacancies__inner__button: rgb(255, 93, 40);
     --contacts__title__background: rgb(255, 93, 40);
+    --contacts__title__name: rgb(255, 255, 255);
     --contacts__title__text: rgba(247, 246, 242, 0.62);
     --contacts__title__text__location: rgba(247, 246, 242, 0.85);
     --about-us__title__background: rgb(255, 93, 40);
+    --about-us__title__name: rgb(255, 255, 255);
     --about-us__title__text: rgba(247, 246, 242, 0.62);
     --about-us__title__text__location: rgba(247, 246, 242, 0.85);
     --footer-divider-color: rgb(130, 134, 143, 0.3);

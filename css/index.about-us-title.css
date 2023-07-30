@@ -63,7 +63,7 @@
     line-height: 66px;
     text-align: center;
     vertical-align: baseline;
-    color: var(--about-us__title__background);
+    color: var(--about-us__title__name);
 }
 
 .about-us__orange__text {
