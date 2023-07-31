@@ -31,7 +31,8 @@
 }
 
 .news__content-main {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .news__content-wine-card {
@@ -47,6 +48,7 @@
     border-radius: 6px;
     margin: 0 15px 0 15px;
 }
+
 /*сделать рамку и сдвинуть фоновое из-е*/
 
 .news__content-title-wine-card {
@@ -85,7 +87,75 @@
 
 .news__content-mussel-and-meat-card {
     display: block;
+    /*flex-direction: column;*/
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+.news__mussel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*.news__content-meat-card {
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.news__meat-image {
+    min-height: 182.312px;
+    background-image: url(../img/news/meat.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-end;
+    border-radius: 6px;
+    margin: 0 15px 0 15px;
+}
+
+.news__content-title {
+    color: var(--background-dark-color);
+    font-family: Vollkorn, serif;
+    font-size: 1.375rem;
+    line-height: 28.6px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.news__content-text {
+    color: var(--subtitle-color);
+    font-family: Roboto, sans-serif;
+    font-size: 1.0625rem;
+    line-height: 24.48px;
+    font-weight: 400;
+    margin: 20px 0 35px 0;
+}
+
+.news__content-button-container {
+    display: flex;
+    width: 125.84px;
+    height: 42.08px;
+    background-color: var(--prices-color);
+    border-radius: 7px 25px 25px 25px;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+    align-items: center;
+    line-height: 22.08px;
+    cursor: pointer;
+}
+
+.news__content-button-text {
+    color: var(--text-light-color);
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+}*/
 
 /*.news__introduction {
     background-image: url(../img/news/background_intro.png);
@@ -132,49 +202,6 @@
     flex-direction: column;
 }
 
-.news__content-meat-card {
-    margin-top: 50px;
-}
-
-.news__content-title {
-    color: var(--background-dark-color);
-    font-family: Vollkorn, serif;
-    font-size: 1.375rem;
-    line-height: 28.6px;
-    font-weight: 400;
-    margin-top: 15px;
-}
-
-.news__content-text {
-    color: var(--subtitle-color);
-    font-family: Roboto, sans-serif;
-    font-size: 1.0625rem;
-    line-height: 24.48px;
-    font-weight: 400;
-    margin: 20px 0 35px 0;
-}
-
-.news__content-button-container {
-    display: flex;
-    width: 125.84px;
-    height: 42.08px;
-    background-color: var(--prices-color);
-    border-radius: 7px 25px 25px 25px;
-    justify-content: center;
-    margin: 10px 10px 10px 10px;
-    align-items: center;
-    text-align: center;
-    line-height: 22.08px;
-    cursor: pointer;
-}
-
-.news__content-button-text {
-    color: var(--text-light-color);
-    text-decoration: none;
-    font-family: Roboto, sans-serif;
-    font-weight: 600;
-}
-
 .news__mussel-meat-image {
     min-width: 272px;
     min-height: 182.312px;
@@ -182,12 +209,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.news__mussel-image,
-.news__meat-image {
-    width: 100%;
-    height: 100%;
 }
 
 @media (min-width: 768px) {
