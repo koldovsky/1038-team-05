@@ -1,8 +1,9 @@
 @import url(global.css);
 @import url(index.what-to-expect.css);
+@import url(index.welcome.css);
 @import url(index.gift-cards.css);
 @import url(index.about-us.css);
-@import url(about-us-page.css);
+@import url(about-us-our-story.css);
 @import url(index.categories.css);
 @import url(index.news.css);
 @import url(index.offers.css);
@@ -13,4 +14,3 @@
 @import url(new-pasta.css);
 @import url(index.catering.css);
 @import url(index.book-a-table.css);
-@import url(index.gift-cards-swiper.css);
