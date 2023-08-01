@@ -14,6 +14,10 @@
         background-position: center top;
     }
 }
+.categories__container {
+    max-width: 1152px;
+    margin: auto;
+}
 .categories__first-subtitle {
     font-size: 11px;
     color: var(--small-text);
@@ -41,9 +45,9 @@
     padding-bottom: 40px;
 }
 @media (min-width: 768px) {
-    .categories_plates {        
+    .categories_plates {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 .categories__plate-one {
@@ -140,42 +144,37 @@
     font-size: 1.0625rem;
 }
 .categories__main-photo-container {
-    max-width: 80%;       
+    max-width: 100%;
     justify-content: center;
     overflow: auto;
     display: flex;
     margin: auto;
 }
 .categories__main-photo {
-    width: 80%;    
+    width: 96%;
     object-fit: cover;
     object-position: 50% 50%;
 }
 .categories__menu {
-    padding: 30px 24px 0px 24px;
-}
-
-.categories__menu-column-one {
-    padding: 0 15px;
+    padding: 30px 0 0 5px;
 }
 .categories__menu-column-two {
     margin-top: 50px;
-    padding: 0 15px;
 }
 @media (min-width: 768px) {
     .categories__menu {
         display: flex;
+        padding: 40px 20px 10px;
+        gap: 50px;
         flex-direction: row;
         justify-content: center;
     }
     .categories__menu-column-one {
         display: flex;
         flex-direction: column;
-        padding: 0 15px;
     }
     .categories__menu-column-two {
-        margin-top: 0px;
-        padding: 0 15px;
+        margin-top: 0;
         display: flex;
         flex-direction: column;
     }
@@ -183,11 +182,20 @@
 .categories__menu-item {
     padding: 7.5px 0;
 }
+.categories__menu-item-title {
+    display: flex;
+}
 .categories__menu-item-name {
     font-size: 1.375rem;
     font-family: Vollkorn, serif;
     font-weight: 400;
-    color: var(--title-color);           
+    color: var(--title-color);
+}
+.categories__menu-item-underline {
+    flex: 1;
+    border-bottom: 1px solid;
+    color: var(--title-color);
+    height: 26px;
 }
 .categories__menu-item-price {
     font-size: 1.25rem;
@@ -228,18 +236,33 @@
     border-style: solid;
     color: var(--small-text);
     font-size: 16px;
+    font-weight: 700;
     border-color: var(--buttons-color);
     border-radius: 7px 25px 25px 25px;
     width: 156px;
     height: 46px;
+    transition: background-color 0.3s ease;
 }
+.categories__first-button:hover {
+    background-color: var(--buttons-color);
+    color: var(--text-light-color);
+}
+#categories-up {
+    position: absolute;
+    top: 0;
+  }
 .categories__second-button {
     background-color: var(--buttons-color);
     border-style: solid;
     border: none;
     font-size: 16px;
+    font-weight: 700;
     color: var(--text-light-color);
     border-radius: 7px 25px 25px 25px;
     width: 164px;
     height: 46px;
+    transition: background-color 0.3s ease;
+}
+.categories__second-button:hover {
+    background-color: var(--buttons-hover-color);
 }
