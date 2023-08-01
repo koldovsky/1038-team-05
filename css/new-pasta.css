@@ -1,6 +1,6 @@
 .all-pasta{
     background-image: url(/img/new-pasta/new-pasta-backround.svg);
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
