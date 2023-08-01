@@ -62,7 +62,7 @@
 
 }
 
-.menu-item{
+.food-container{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -73,7 +73,7 @@
     background-color: white;
 }
 
-.menu-item2{
+.food-container2{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
