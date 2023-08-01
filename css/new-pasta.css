@@ -1,20 +1,113 @@
 .all-pasta{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family:'Roboto',sans-serif;
-
-
-}
-
-.all-inn{
     background-image: url(/img/new-pasta/new-pasta-backround.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    display: block;
 }
+
+
 .body{
     text-align: center;
+    margin: 10px 0;
+}
+.new-pasta{
+    font-size: small;
+    color: rgb(255, 93, 54);
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.italian-days{
+    font-family: "Vollkorn";
+    color: rgb(75, 86, 106)
+}
+.fairwiev{
+    font-family: "Roboto" sans-serif;
+    font-size: medium;
+    color: rgb(130, 134, 143);
+}
+.all-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    width: 600px;
+    margin: 20px 0;
     
+}
+
+.pasta{
+    font-family: "Roboto" sans-serif;
+    color: rgb(130, 134, 143);
+    font-size: small;
+    font-weight: bold;
+}
+.name-of-food{
+    font-family: Vollkorn;
+    color: rgb(75, 86, 106);
+    font-size: larger;
+}
+.netto{
+    font-family: "Roboto" sans-serif;
+    color: rgb(130, 134, 143);
+    font-style: italic;
+}
+.ingirients{
+    font-family: "Roboto" sans-serif;
+    color: rgb(155, 158, 164);
+
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 570px;
+    height: 294px;
+    max-width: 800px;
+    min-width: 265px;
+    background-color: white;
+}
+
+.menu-item2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 570px;
+    height: 294px;
+    max-width: 800px;
+    min-width: 265px;
+    background-color: white;
+}
+.text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 35px 30px;
+}
+.photo{
+    width: 285px;
+    height: 294px;
+    object-fit: cover;
+}
+
+.end-block{
+    text-align: center;
+}
+
+.phone-number{
+    font-family: "Roboto" sans-serif;
+    color: rgb(130, 134, 143);
+}
+a{
+    color: rgb(255, 93, 40);
+}
+a:hover{
+    color: darkorange;
 }
