@@ -24,7 +24,7 @@ function circleCircumference(circle) {
 
 function giveMeFive(obj) {
   const arr = [];
-  for (let key in obj) {
+  for (const key in obj) {
     if (key.length == 5) arr.push(key);
     if (obj[key].length == 5) arr.push(obj[key]);
   }
@@ -36,7 +36,7 @@ function giveMeFive(obj) {
 function buildFun(n) {
   const res = [];
   for (let i = 0; i < n; i++) {
-    let tmp = i;
+    const tmp = i;
     res.push(function () {
       return tmp;
     });

@@ -1,0 +1,49 @@
+ .about-us-our-story{
+   height: 100%; 
+  background-image: url(../img/about-us/about-bg.png);
+  background-size: cover;
+  background-position: center center;
+  text-align: center; 
+  padding: 100px;  
+}
+
+.about-us-our-story__first-subtitle {
+  min-height: 50px;
+  color: var(--small-text);
+  font-size: 11px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.about-us-our-story__first-paragraph {
+  min-height: 100px;
+  color: var(--description-text-color);
+  font-weight: 500;
+  font-size: 19px;
+  margin-top: 15px; 
+}
+
+.Date {
+  color: var(--small-text);
+  margin: 10px;
+  font-family: Vollkorn, serif ;
+}
+
+.about-us-our-story__year {
+  justify-content: center;
+  margin: 20px;  
+}
+
+.about-us-our-story__title {
+  display: block;
+}
+.about-us-our-story__divider{
+width: 52px;
+height: 3px;
+background-color:var(--background-dark-color) ;
+margin: 15px 0 15px 0;
+display: inline-block;
+
+}
+ 
+ 

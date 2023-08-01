@@ -125,17 +125,42 @@
   letter-spacing: 1.1px;
 }
 
+.gift-cards__carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--carousel-background-color);
+  padding: 0 20px;
+}
+
 .gift-cards__carousel-inner {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   background-color: var(--carousel-background-color);
-  padding: 20px;
+  padding: 20px 0;
   gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.gift-cards__carousel-button-prev,
+.gift-cards__carousel-button-next {
+  color: var(--background-light-color);
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 25px;
+  padding: 0 10px;
+}
+
+.gift-cards__carousel-item {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .gift-cards__carousel-item-image {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
 }
 
 @media (min-width: 768px) {
@@ -168,7 +193,7 @@
 
 @media (min-width: 992px) {
   .gift-cards__discount-offer {
-    max-width: 1024px;
+    max-width: 1200px;
     flex-direction: row;
     padding-left: 50px;
     padding-right: 50px;
