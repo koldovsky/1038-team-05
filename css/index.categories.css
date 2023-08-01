@@ -247,10 +247,6 @@
     background-color: var(--buttons-color);
     color: var(--text-light-color);
 }
-#categories-up {
-    position: absolute;
-    top: 0;
-  }
 .categories__second-button {
     background-color: var(--buttons-color);
     border-style: solid;
