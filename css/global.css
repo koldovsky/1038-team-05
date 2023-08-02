@@ -61,6 +61,10 @@
     --about-us__title__text: rgba(247, 246, 242, 0.62);
     --about-us__title__text__location: rgba(247, 246, 242, 0.85);
     --footer-divider-color: rgb(130, 134, 143, 0.3);
+    --menu__title__background: rgb(255, 93, 40);
+    --menu__title__name: rgb(255, 255, 255);
+    --menu__title__text: rgba(247, 246, 242, 0.62);
+    --menu__title__text__location: rgba(247, 246, 242, 0.85);
 
 
 }
