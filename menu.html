@@ -6,539 +6,569 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Page | Restaurant Website</title>
     <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header class="menu--header">
-    </header>
-    <main class="menu--menu-main menu--container">
-        <section class="menu--menu-section">
-            <article id="chef's-specials" class="menu--menu-article">
-                <h2 class="menu--menu-title">- SPECIALS -</h2>              
-                <div class="menu--menu-subtitle-description">      
-                    <div>
-                        <h3 class="menu--menu-subtitle">Chef's Specials</h3>   
-                        <img class="menu--filler" src="img/menu/filler.png" alt="filler">  
+        <section data-include="partials/index.m_header.partial.html"></section>
+    </header> 
+    <main class="menu--menu-main">  
+        <section data-include="partials/menu.title.partial.html"></section>
+        <section class="menu--container">
+            <section class="menu--menu-section">
+                <article id="chef's-specials" class="menu--menu-article">
+                    <h2 class="menu--menu-title">- SPECIALS -</h2>              
+                    <div class="menu--menu-subtitle-description">      
+                        <div>
+                            <h3 class="menu--menu-subtitle">Chef's Specials</h3>   
+                            <img class="menu--filler" src="img/menu/filler.png" alt="filler">  
+                        </div>            
+                        <p class="menu--menu-description">Don't miss the chance to try our chef's seasonal 
+                            menu limited in time! The items on this menu may 
+                            vary depending on the selected restaurant.
+                        </p>
+                    </div>
+                    <div class="menu--menu-all-items">
+                        <div class="menu--menu-items">
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Shrimp Tempura
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $15
+                                    </p>
+                                </div>           
+                                <p class="menu--menu-item-description">
+                                    The excellent all-time Japanese appetizer, 125g
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Salad "Sicilia"
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $31
+                                    </p>
+                                </div>                
+                                <p class="menu--menu-item-description">
+                                    Bright and tasty salad which you can pair with any dish, 160g.
+                                </p>
+                            </section>
+                        </div>
+                        <div class="menu--menu-items">
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Pasta "San Miguel"
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $23
+                                    </p>
+                                </div>                
+                                <p class="menu--menu-item-description">
+                                    Italian pasta with organic pesto and chicken, 320g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Tiramisu
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $18
+                                    </p>
+                                </div>            
+                                <p class="menu--menu-item-description">
+                                    The perfect and the most popular Italian dessert, 160g.
+                                </p>
+                            </section>
+                        </div>
+                    </div>    
+                </article>
+                <article id="lunch" class="menu--menu-article">
+                    <h2 class="menu--menu-title">- LUNCH -</h2>
+                    <div class="menu--menu-subtitle-description">      
+                        <div>
+                            <h3 class="menu--menu-subtitle">Lunch & Dinner</h3>  
+                            <img class="menu--filler" src="img/menu/filler.png" alt="filler">  
+                        </div>
+                        <p class="menu--menu-description">Fresh pasta, salads, soups, toasts, and many
+                            more dishes are waiting 
+                            for you. Eat well and enjoy your meal!
+                        </p>
+                    </div>
+                    <div class="menu--menu-all-items">
+                        <div class="menu--menu-items">
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Chicken Pot Pie
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $12
+                                    </p>
+                                </div>        
+                                <p class="menu--menu-item-description">
+                                    Pie with carrots, peas and a mix of chicken, 250g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Chicken Thighs & Mushroom
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $15
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    Thighs in a buttery sauce with a sprinkle of herbs, 320g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Three-Cheese Pasta
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $25
+                                    </p>
+                                </div>      
+                                <p class="menu--menu-item-description">
+                                    Pasta filled with ricotta cheese & spinach, 220g.
+                                </p>
+                            </section>
+                        </div>
+                        <div class="menu--menu-items">
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Frito Misto
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $14
+                                    </p>
+                                </div>         
+                                <p class="menu--menu-item-description">
+                                    Served with Italian tartare sauce, 200g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Penne Carbonara
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $18
+                                    </p>
+                                </div>        
+                                <p class="menu--menu-item-description">
+                                    Based on eggs, cheese bacon, and pepper, 250g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Tomato and Arugula Salad
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $17
+                                    </p>
+                                </div>        
+                                <p class="menu--menu-item-description">
+                                    Simple balsamic pasta salad with fresh cherry tomatoes, arugula.
+                                </p>
+                            </section>
+                        </div>
                     </div>            
-                    <p class="menu--menu-description">Don't miss the chance to try our chef's seasonal 
-                        menu limited in time! The items on this menu may 
-                        vary depending on the selected restaurant.
-                    </p>
+                </article>
+                <article class="menu--menu-article">
+                    <h2 class="menu--menu-title">- MAIN -</h2>
+                    <div class="menu--menu-subtitle-description">            
+                        <div>
+                            <h3 class="menu--menu-subtitle">Main Courses</h3>
+                            <img class="menu--filler" src="img/menu/filler.png" alt="filler">  
+                        </div>
+                        <p class="menu--menu-description">
+                            We offer a wide selection of fish and meat 
+                            dishes, as well as some vegan and vegetarian 
+                            options for our guests.
+                        </p>
+                    </div>   
+                    <div class="menu--menu-all-items">
+                        <div class="menu--menu-items">
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Duck Confit Poutine
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $24
+                                    </p>
+                                </div>     
+                                <p class="menu--menu-item-description">
+                                    Pickled red cabbage, green peas, caramelized onions, duck confit, 320 g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Warm Goat Cheese Salad
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $16
+                                    </p>
+                                </div>  
+                                <p class="menu--menu-item-description">
+                                    Mixed greens, sunflower seeds, dried cranberries, pan-fried cheese, 200g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Beef Tartare
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $25
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    Beef filet, fermented cabbage, grilled romaine heart, cashew purée, 200g.
+                                </p>
+                            </section>
+                        </div>
+                        <div class="menu--menu-items">
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Creamy Mac and Cheese
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $20
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    Homemade pasta and freshly made and warmed up cheese sauce, 300g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Halloumi
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $35
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    Roasted vegetables, celeriac purée, sunflower seeds, 200g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Chicken A La King
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $25
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    Creamy white sauce with poached chicken pieces, mushrooms, 250g.
+                                </p>
+                            </section>
+                        </div>
+                    </div>      
+                </article>
+                <article id="drinks" class="menu--menu-article">
+                    <h2 class="menu--menu-title">- DRINKS -</h2>
+                    <div class="menu--menu-subtitle-description">           
+                        <div>
+                            <h3 class="menu--menu-subtitle">Drinks & Wines</h3>
+                            <img class="menu--filler" src="img/menu/filler.png" alt="filler">  
+                        </div>
+                        <p class="menu--menu-description">
+                            Enjoy refreshing drinks and the best wines in 
+                            our restaurant. Prices are per glass (150 ml); 
+                            bottles are also available.
+                        </p>
+                    </div>     
+                    <div class="menu--menu-all-items">
+                        <div class="menu--menu-items">
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Dibon Cava Brut Rose
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $4
+                                    </p>
+                                </div> 
+                                <p class="menu--menu-item-description">
+                                    Explore a fine mousse and scents of red berries.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Prosecco
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $7
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    Perfect for a range of tastes and occasions.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Sur Lie Alpino
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $7
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    A straw yellow drink with small and smooth bubbles.
+                                </p>
+                            </section>
+                        </div>
+                        <div class="menu--menu-items">
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Chablis
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $6
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    The most distinctive of all chardonnays.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Sancere
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $5
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    One of the world's most celebrated wine.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Can Feixes Blanc Selecció
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $8
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    Spanish organic white wine from Penedès.
+                                </p>
+                            </section>
+                        </div>
+                    </div>    
+                </article>
+                <article class="menu--menu-article">
+                    <h2 class="menu--menu-title">- DESSERTS -</h2>
+                    <div class="menu--menu-subtitle-description">    
+                        <div>
+                            <h3 class="menu--menu-subtitle">Desserts</h3>
+                            <img class="menu--filler" src="img/menu/filler.png" alt="filler">  
+                        </div>
+                        <p class="menu--menu-description">
+                            Do you want something sweet with a cup of tea 
+                            or coffee? We offer a wide range of delicious desserts.
+                        </p>
+                    </div>        
+                    <div class="menu--menu-all-items">
+                        <div class="menu--menu-items">
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Pouding Chomeur
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $13
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    With maple syrup sauce, 200g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Cheesecake
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $15
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    Choose from fruity or liqueur-infused cheesecake, 250g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Lemon Tart
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $8
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    Perfect as a dessert or as a snack with a cup of coffee, 120g.
+                                </p>
+                            </section>
+                        </div>
+                        <div class="menu--menu-items">
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Apple Crumble Pie
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $8
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    Ideal dessert for any occasion, 200g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Chocolate Tart
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $15
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    Served with white chocolate sauce and raspberries, 250g.
+                                </p>
+                            </section>
+                            <section class="menu--menu-item">
+                                <div class="menu--menu-item-title-price">
+                                    <h4 class="menu--menu-item-title">
+                                        Creme Brulee
+                                    </h4>
+                                    <p class="menu--underline-item-price"></p>
+                                    <p class="menu--menu-item-price">                   
+                                        $15
+                                    </p>
+                                </div>
+                                <p class="menu--menu-item-description">
+                                    A delicate dessert with a crunchy caramel topping, 180g.
+                                </p>
+                            </section>
+                        </div>
+                    </div>  
+                </article>
+            </section>
+            <section class="menu--reserve-section">
+                <article class="menu--reserve-article menu--reserve-container">
+                    <div class="menu--reserve-div">
+                        <h2 class="menu--reserve-title">- RESERVE -</h2>
+                        <h3 class="menu--reserve-subtitle">Want to Reserve a Table?</h3>
+                        <img class="menu--filler-white" src="img/menu/filler-white.png" alt="filler">  
+                        <p class="menu--reserve-description">
+                            Feel free to contact us or fill out the form.
+                        </p>
+                        <div class="menu--reserve-book-a-table-buttn-div">
+                            <a class="menu--reserve-book-a-table-buttn-a" href="contacts.html"><img src="img/menu/book-a-table-buttn.png" alt="Button book a table" height="42" width="144"/a>
+                        </div>
+                    </div>      
+                </article>
+            </section>
+            <section class="menu--add-section">
+                <div class="menu--add-section--box">
+                    <div class="menu--add-section--box--img">
+                        <img src="img/menu/menu_add_section_delivery.jpg" alt="add section delivery">
+                    </div>
+                    <div class="menu--add-section--box-title-description">
+                        <h4 class="menu--menu-item-title">
+                            Delivery
+                        </h4>
+                        <p class="menu--menu-item-description">
+                            Order door-to-door food delivery service and enjoy your favorite food in the convenience of your home.
+                        </p>
+                    </div> 
                 </div>
-                <div class="menu--menu-all-items">
-                    <div class="menu--menu-items">
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Shrimp Tempura
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $15
-                                </p>
-                            </div>           
-                            <p class="menu--menu-item-description">
-                                The excellent all-time Japanese appetizer, 125g
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Salad "Sicilia"
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $31
-                                </p>
-                            </div>                
-                            <p class="menu--menu-item-description">
-                                Bright and tasty salad which you can pair with any dish, 160g.
-                            </p>
-                        </section>
-                    </div>
-                    <div class="menu--menu-items">
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Pasta "San Miguel"
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $23
-                                </p>
-                            </div>                
-                            <p class="menu--menu-item-description">
-                                Italian pasta with organic pesto and chicken, 320g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Tiramisu
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $18
-                                </p>
-                            </div>            
-                            <p class="menu--menu-item-description">
-                                The perfect and the most popular Italian dessert, 160g.
-                            </p>
-                        </section>
-                    </div>
-                </div>    
-            </article>
-            <article id="lunch" class="menu--menu-article">
-                <h2 class="menu--menu-title">- LUNCH -</h2>
-                <div class="menu--menu-subtitle-description">      
-                    <div>
-                        <h3 class="menu--menu-subtitle">Lunch & Dinner</h3>  
-                        <img class="menu--filler" src="img/menu/filler.png" alt="filler">  
-                    </div>
-                    <p class="menu--menu-description">Fresh pasta, salads, soups, toasts, and many
-                        more dishes are waiting 
-                        for you. Eat well and enjoy your meal!
-                    </p>
+                <div class="menu--add-section--box">
+                    <div class="menu--add-section--box--img">
+                        <img src="img/menu/menu_add_section_parking.jpg" alt="add section parking">
+                    </div> 
+                    <div class="menu--add-section--box-title-description">
+                        <h4 class="menu--menu-item-title">
+                            Free Parking Lot
+                        </h4>
+                        <p class="menu--menu-item-description">
+                            We are happy to offer free and safeguarded parking lot to both new and regular clients
+                        </p>
+                    </div>  
                 </div>
-                <div class="menu--menu-all-items">
-                    <div class="menu--menu-items">
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Chicken Pot Pie
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $12
-                                </p>
-                            </div>        
-                            <p class="menu--menu-item-description">
-                                Pie with carrots, peas and a mix of chicken, 250g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Chicken Thighs & Mushroom
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $15
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                Thighs in a buttery sauce with a sprinkle of herbs, 320g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Three-Cheese Pasta
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $25
-                                </p>
-                            </div>      
-                            <p class="menu--menu-item-description">
-                                Pasta filled with ricotta cheese & spinach, 220g.
-                            </p>
-                        </section>
+                <div class="menu--add-section--box menu--add-section--centred">
+                    <div class="menu--add-section--box--img">
+                        <img src="img/menu/menu_add_section_reservation.jpg" alt="add section reservation">
                     </div>
-                    <div class="menu--menu-items">
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Frito Misto
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $14
-                                </p>
-                            </div>         
-                            <p class="menu--menu-item-description">
-                                Served with Italian tartare sauce, 200g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Penne Carbonara
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $18
-                                </p>
-                            </div>        
-                            <p class="menu--menu-item-description">
-                                Based on eggs, cheese bacon, and pepper, 250g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Tomato and Arugula Salad
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $17
-                                </p>
-                            </div>        
-                            <p class="menu--menu-item-description">
-                                Simple balsamic pasta salad with fresh cherry tomatoes, arugula.
-                            </p>
-                        </section>
+                    <div class="menu--add-section--box-title-description">
+                        <h4 class="menu--menu-item-title">
+                            Table Reservation
+                        </h4>
+                        <p class="menu--menu-item-description">
+                            Our restaurants are quite popular, so we recommend you to call us in advance if you want to book a table.
+                        </p>
                     </div>
-                </div>            
-            </article>
-            <article class="menu--menu-article">
-                <h2 class="menu--menu-title">- MAIN -</h2>
-                <div class="menu--menu-subtitle-description">            
-                    <div>
-                        <h3 class="menu--menu-subtitle">Main Courses</h3>
-                        <img class="menu--filler" src="img/menu/filler.png" alt="filler">  
-                    </div>
-                    <p class="menu--menu-description">
-                        We offer a wide selection of fish and meat 
-                        dishes, as well as some vegan and vegetarian 
-                        options for our guests.
-                    </p>
-                </div>   
-                <div class="menu--menu-all-items">
-                    <div class="menu--menu-items">
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Duck Confit Poutine
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $24
-                                </p>
-                            </div>     
-                            <p class="menu--menu-item-description">
-                                Pickled red cabbage, green peas, caramelized onions, duck confit, 320 g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Warm Goat Cheese Salad
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $16
-                                </p>
-                            </div>  
-                            <p class="menu--menu-item-description">
-                                Mixed greens, sunflower seeds, dried cranberries, pan-fried cheese, 200g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Beef Tartare
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $25
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                Beef filet, fermented cabbage, grilled romaine heart, cashew purée, 200g.
-                            </p>
-                        </section>
-                    </div>
-                    <div class="menu--menu-items">
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Creamy Mac and Cheese
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $20
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                Homemade pasta and freshly made and warmed up cheese sauce, 300g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Halloumi
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $35
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                Roasted vegetables, celeriac purée, sunflower seeds, 200g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Chicken A La King
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $25
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                Creamy white sauce with poached chicken pieces, mushrooms, 250g.
-                            </p>
-                        </section>
-                    </div>
-                </div>      
-            </article>
-            <article id="drinks" class="menu--menu-article">
-                <h2 class="menu--menu-title">- DRINKS -</h2>
-                <div class="menu--menu-subtitle-description">           
-                    <div>
-                        <h3 class="menu--menu-subtitle">Drinks & Wines</h3>
-                        <img class="menu--filler" src="img/menu/filler.png" alt="filler">  
-                    </div>
-                    <p class="menu--menu-description">
-                        Enjoy refreshing drinks and the best wines in 
-                        our restaurant. Prices are per glass (150 ml); 
-                        bottles are also available.
-                    </p>
-                </div>     
-                <div class="menu--menu-all-items">
-                    <div class="menu--menu-items">
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Dibon Cava Brut Rose
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $4
-                                </p>
-                            </div> 
-                            <p class="menu--menu-item-description">
-                                Explore a fine mousse and scents of red berries.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Prosecco
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $7
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                Perfect for a range of tastes and occasions.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Sur Lie Alpino
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $7
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                A straw yellow drink with small and smooth bubbles.
-                            </p>
-                        </section>
-                    </div>
-                    <div class="menu--menu-items">
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Chablis
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $6
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                The most distinctive of all chardonnays.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Sancere
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $5
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                One of the world's most celebrated wine.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Can Feixes Blanc Selecció
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $8
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                Spanish organic white wine from Penedès.
-                            </p>
-                        </section>
-                    </div>
-                </div>    
-            </article>
-            <article class="menu--menu-article">
-                <h2 class="menu--menu-title">- DESSERTS -</h2>
-                <div class="menu--menu-subtitle-description">    
-                    <div>
-                        <h3 class="menu--menu-subtitle">Desserts</h3>
-                        <img class="menu--filler" src="img/menu/filler.png" alt="filler">  
-                    </div>
-                    <p class="menu--menu-description">
-                        Do you want something sweet with a cup of tea 
-                        or coffee? We offer a wide range of delicious desserts.
-                    </p>
-                </div>        
-                <div class="menu--menu-all-items">
-                    <div class="menu--menu-items">
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Pouding Chomeur
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $13
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                With maple syrup sauce, 200g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Cheesecake
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $15
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                Choose from fruity or liqueur-infused cheesecake, 250g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Lemon Tart
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $8
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                Perfect as a dessert or as a snack with a cup of coffee, 120g.
-                            </p>
-                        </section>
-                    </div>
-                    <div class="menu--menu-items">
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Apple Crumble Pie
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $8
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                Ideal dessert for any occasion, 200g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Chocolate Tart
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $15
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                Served with white chocolate sauce and raspberries, 250g.
-                            </p>
-                        </section>
-                        <section class="menu--menu-item">
-                            <div class="menu--menu-item-title-price">
-                                <h4 class="menu--menu-item-title">
-                                    Creme Brulee
-                                </h4>
-                                <p class="menu--underline-item-price"></p>
-                                <p class="menu--menu-item-price">                   
-                                    $15
-                                </p>
-                            </div>
-                            <p class="menu--menu-item-description">
-                                A delicate dessert with a crunchy caramel topping, 180g.
-                            </p>
-                        </section>
-                    </div>
-                </div>  
-            </article>
-        </section>
-        <section class="menu--reserve-section">
-            <article class="menu--reserve-article menu--reserve-container">
-                <div class="menu--reserve-div">
-                    <h2 class="menu--reserve-title">- RESERVE -</h2>
-                    <h3 class="menu--reserve-subtitle">Want to Reserve a Table?</h3>
-                    <img class="menu--filler-white" src="img/menu/filler-white.png" alt="filler">  
-                    <p class="menu--reserve-description">
-                        Feel free to contact us or fill out the form.
-                    </p>
-                    <div class="menu--reserve-book-a-table-buttn-div">
-                        <a class="menu--reserve-book-a-table-buttn-a" href="contacts.html"><img src="img/menu/book-a-table-buttn.png" alt="Button book a table" height="42" width="144"/a>
-                    </div>
-                </div>      
-            </article>
+                </div>
+            </section>
         </section>
     </main>
-    <!-- Temporary br to check backgroung atachmeent -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- Temporary br to check backgroung atachmeent -->
     <footer class="footer">
+        <section data-include="partials/footer.partial.html"></section>
     </footer> 
+    <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
 </body>
 </html>
