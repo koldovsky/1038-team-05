@@ -8,6 +8,7 @@
 .body{
     text-align: center;
     margin: 10px 0;
+    min-width: 265px;
 }
 .new-pasta{
     font-size: small;
