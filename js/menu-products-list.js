@@ -1,20 +1,25 @@
 const specialsResponse = await fetch('api/menu-specials.json');
 const specials = await specialsResponse.json();
+const lunchResponse = await fetch('api/menu-lunch.json');
+const lunch = await lunchResponse.json();
+const mainResponse = await fetch('api/menu-main-courses.json');
+const main = await mainResponse.json();
+const drinksResponse = await fetch('api/menu-drinks.json');
+const drinks = await drinksResponse.json();
+const desertsResponse = await fetch('api/menu-drinks.json');
+const deserts = await desertsResponse.json();
 
-renderMenuProducts(specials);
+renderMenuProducts(specials,lunch,main,drinks,deserts);
 
-function renderMenuProducts(products) {
+function renderMenuProducts(specials,lunch,main,drinks,desserts) {
     const specialsContainer = document.getElementById('chefs-specials');
     specialsContainer.innerHTML = '';
-
     let menuItemsHtml = '<div class="menu--menu-items">';
-
     let count = 0;
-    for (const product of products) {
+    for (const product of specials) {
         count++;
         if (count === 3) {
             menuItemsHtml += '</div><div class="menu--menu-items">';
-            count = 0; // Скидаємо лічильник для нового блоку меню
         }
 
         menuItemsHtml += `
@@ -34,9 +39,128 @@ function renderMenuProducts(products) {
             </section>
         `;
     }
-
     menuItemsHtml += '</div>';
     specialsContainer.innerHTML = menuItemsHtml;
+    ///
+    const lunchContainer = document.getElementById('lunch');
+    lunchContainer.innerHTML = '';
+    menuItemsHtml = '<div class="menu--menu-items">';
+    count = 0;
+    for (const product of lunch) {
+        count++;
+        if (count === 4) {
+            menuItemsHtml += '</div><div class="menu--menu-items">';
+        }
+
+        menuItemsHtml += `
+            <section class="menu--menu-item">
+                <div class="menu--menu-item-title-price">
+                    <h4 class="menu--menu-item-title">
+                        ${product.title}
+                    </h4>
+                    <p class="menu--underline-item-price"></p>
+                    <p class="menu--menu-item-price">                   
+                        ${product.vault} ${product.price}
+                    </p>
+                </div>           
+                <p class="menu--menu-item-description">
+                    ${product.description}
+                </p>
+            </section>
+        `;
+    }
+    menuItemsHtml += '</div>';
+    lunchContainer.innerHTML = menuItemsHtml;
+    ///
+    const mainCoursesContainer = document.getElementById('main-courses');
+    mainCoursesContainer.innerHTML = '';
+    menuItemsHtml = '<div class="menu--menu-items">';
+    count = 0;
+    for (const product of main) {
+        count++;
+        if (count === 4) {
+            menuItemsHtml += '</div><div class="menu--menu-items">';
+        }
+
+        menuItemsHtml += `
+            <section class="menu--menu-item">
+                <div class="menu--menu-item-title-price">
+                    <h4 class="menu--menu-item-title">
+                        ${product.title}
+                    </h4>
+                    <p class="menu--underline-item-price"></p>
+                    <p class="menu--menu-item-price">                   
+                        ${product.vault} ${product.price}
+                    </p>
+                </div>           
+                <p class="menu--menu-item-description">
+                    ${product.description}
+                </p>
+            </section>
+        `;
+    }
+    menuItemsHtml += '</div>';
+    mainCoursesContainer.innerHTML = menuItemsHtml;
+    ///
+    const drinksContainer = document.getElementById('drinks');
+    drinksContainer.innerHTML = '';
+    menuItemsHtml = '<div class="menu--menu-items">';
+    count = 0;
+    for (const product of drinks) {
+        count++;
+        if (count === 4) {
+            menuItemsHtml += '</div><div class="menu--menu-items">';
+        }
+
+        menuItemsHtml += `
+            <section class="menu--menu-item">
+                <div class="menu--menu-item-title-price">
+                    <h4 class="menu--menu-item-title">
+                        ${product.title}
+                    </h4>
+                    <p class="menu--underline-item-price"></p>
+                    <p class="menu--menu-item-price">                   
+                        ${product.vault} ${product.price}
+                    </p>
+                </div>           
+                <p class="menu--menu-item-description">
+                    ${product.description}
+                </p>
+            </section>
+        `;
+    }
+    menuItemsHtml += '</div>';
+    drinksContainer.innerHTML = menuItemsHtml;
+    ///
+    const desertsContainer = document.getElementById('deserts');
+    desertsContainer.innerHTML = '';
+    menuItemsHtml = '<div class="menu--menu-items">';
+    count = 0;
+    for (const product of desserts) {
+        count++;
+        if (count === 4) {
+            menuItemsHtml += '</div><div class="menu--menu-items">';
+        }
+
+        menuItemsHtml += `
+            <section class="menu--menu-item">
+                <div class="menu--menu-item-title-price">
+                    <h4 class="menu--menu-item-title">
+                        ${product.title}
+                    </h4>
+                    <p class="menu--underline-item-price"></p>
+                    <p class="menu--menu-item-price">                   
+                        ${product.vault} ${product.price}
+                    </p>
+                </div>           
+                <p class="menu--menu-item-description">
+                    ${product.description}
+                </p>
+            </section>
+        `;
+    }
+    menuItemsHtml += '</div>';
+    desertsContainer.innerHTML = menuItemsHtml;
 }
 
 let currencies;
