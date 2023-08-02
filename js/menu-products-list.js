@@ -1,4 +1,4 @@
-const specialsResponse = await fetch('/api/menu-specials.json');
+const specialsResponse = await fetch('../api/menu-specials.json');
 const specials = await specialsResponse.json();
 
 renderMenuProducts(specials);
