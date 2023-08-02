@@ -27,8 +27,7 @@
 
 .menu--menu-subtitle-description{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;  
 }
 
 @media (max-width: 765px) {
@@ -81,7 +80,7 @@
     font-size: 1.5rem;
     font-family: Vollkorn, serif;
     font-weight: normal;
-    color: var(--text-color);
+    color: var(--title-color);
 }
 
 @media (max-width: 550px) {
@@ -266,5 +265,41 @@
     .menu--reserve-container {
         justify-content: unset;
         align-items: unset;
+    }
+}
+.menu--add-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 90px;
+    padding-bottom: 15px;
+}
+.menu--add-section--box {
+    flex: 1 1 30%; /* Підлаштуйте розміри на свій розсуд */
+    display: flex;
+    flex-direction: row;  
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (max-width: 995px) {
+    .menu--add-section--box {
+        flex: 1 1 50%; /* Змінюємо розмір блоків на 50% */
+      }
+    .menu--add-section--box:nth-child(3) {
+        order: 1; /* Змінюємо порядок третього блока на перший */
+    }
+    .menu--add-section--centred{
+        max-width: 404px;
+        padding-left: 30%;
+    }
+}
+@media (max-width: 551px) {
+    .menu--add-section{
+        flex-direction: column;
+    }
+    .menu--add-section--centred{
+        max-width: none;
+        padding-left: 15px;
     }
 }
