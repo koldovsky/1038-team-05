@@ -54,6 +54,7 @@
 .menu--menu-all-items{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 @media (min-width: 1028px) {
