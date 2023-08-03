@@ -9,9 +9,9 @@ const drinks = await drinksResponse.json();
 const desertsResponse = await fetch('api/menu-drinks.json');
 const deserts = await desertsResponse.json();
 
-renderMenuProducts(specials,lunch,main,drinks,deserts);
+renderMenuProducts(specials,lunch,main,drinks,deserts,1);
 
-function renderMenuProducts(specials,lunch,main,drinks,desserts) {
+function renderMenuProducts(specials,lunch,main,drinks,desserts,rate) {
     const specialsContainer = document.getElementById('chefs-specials');
     specialsContainer.innerHTML = '';
     let menuItemsHtml = '<div class="menu--menu-items">';
@@ -30,7 +30,7 @@ function renderMenuProducts(specials,lunch,main,drinks,desserts) {
                     </h4>
                     <p class="menu--underline-item-price"></p>
                     <p class="menu--menu-item-price">                   
-                        ${product.vault} ${product.price}
+                        ${product.vault}${(product.price * rate).toFixed(2)}
                     </p>
                 </div>           
                 <p class="menu--menu-item-description">
@@ -60,7 +60,7 @@ function renderMenuProducts(specials,lunch,main,drinks,desserts) {
                     </h4>
                     <p class="menu--underline-item-price"></p>
                     <p class="menu--menu-item-price">                   
-                        ${product.vault} ${product.price}
+                        ${product.vault}${(product.price  * rate).toFixed(2)}
                     </p>
                 </div>           
                 <p class="menu--menu-item-description">
@@ -90,7 +90,7 @@ function renderMenuProducts(specials,lunch,main,drinks,desserts) {
                     </h4>
                     <p class="menu--underline-item-price"></p>
                     <p class="menu--menu-item-price">                   
-                        ${product.vault} ${product.price}
+                        ${product.vault}${(product.price  * rate).toFixed(2)}
                     </p>
                 </div>           
                 <p class="menu--menu-item-description">
@@ -120,7 +120,7 @@ function renderMenuProducts(specials,lunch,main,drinks,desserts) {
                     </h4>
                     <p class="menu--underline-item-price"></p>
                     <p class="menu--menu-item-price">                   
-                        ${product.vault} ${product.price}
+                        ${product.vault}${(product.price  * rate).toFixed(2)}
                     </p>
                 </div>           
                 <p class="menu--menu-item-description">
@@ -150,7 +150,7 @@ function renderMenuProducts(specials,lunch,main,drinks,desserts) {
                     </h4>
                     <p class="menu--underline-item-price"></p>
                     <p class="menu--menu-item-price">                   
-                        ${product.vault} ${product.price}
+                        ${product.vault}${(product.price  * rate).toFixed(2)}
                     </p>
                 </div>           
                 <p class="menu--menu-item-description">
@@ -169,9 +169,89 @@ async function changeCurrency() {
         const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
         currencies = await response.json();
     }
-    const currName = document.querySelector('.products__currency').value;
+    const currName = document.querySelector('.menu-title-select-selected').value;
     const rate = currencies.rates[currName];
-    renderProducts(products, rate);
+    const updatedSpecials = specials.map(special => {
+        let val;
+        if(currName === 'EUR'){
+            val = '€';
+        }
+        else if(currName === 'UAH'){
+            val = '₴';
+        }
+        else{
+            val = '$';
+        }
+        return {
+          ...special,
+          vault: val
+        };
+    });
+    const updatedLunch = lunch.map(special => {
+        let val;
+        if(currName === 'EUR'){
+            val = '€';
+        }
+        else if(currName === 'UAH'){
+            val = '₴';
+        }
+        else{
+            val = '$';
+        }
+        return {
+          ...special,
+          vault: val
+        };
+    });
+    const updatedMain = main.map(special => {
+        let val;
+        if(currName === 'EUR'){
+            val = '€';
+        }
+        else if(currName === 'UAH'){
+            val = '₴';
+        }
+        else{
+            val = '$';
+        }
+        return {
+          ...special,
+          vault: val
+        };
+    });
+    const updatedDrinks = drinks.map(special => {
+        let val;
+        if(currName === 'EUR'){
+            val = '€';
+        }
+        else if(currName === 'UAH'){
+            val = '₴';
+        }
+        else{
+            val = '$';
+        }
+        return {
+          ...special,
+          vault: val
+        };
+    });
+    const updatedDeserts = deserts.map(special => {
+        let val;
+        if(currName === 'EUR'){
+            val = '€';
+        }
+        else if(currName === 'UAH'){
+            val = '₴';
+        }
+        else{
+            val = '$';
+        }
+        return {
+          ...special,
+          vault: val
+        };
+    });
+    renderMenuProducts(updatedSpecials,updatedLunch,updatedMain,updatedDrinks,updatedDeserts,rate);
 }
 
-//document.querySelector('.products__currency').addEventListener('change', changeCurrency);
+document.querySelector('.menu-title-select-selected').addEventListener('change', changeCurrency);
