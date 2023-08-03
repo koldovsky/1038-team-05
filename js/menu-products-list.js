@@ -30,7 +30,7 @@ function renderMenuProducts(specials,lunch,main,drinks,desserts,rate) {
                     </h4>
                     <p class="menu--underline-item-price"></p>
                     <p class="menu--menu-item-price">                   
-                        ${product.vault}${(Math.floor(product.price * rate)).toFixed(2)}
+                        ${product.vault}${(Math.floor(product.price * rate)).toFixed(0)}
                     </p>
                 </div>           
                 <p class="menu--menu-item-description">
@@ -60,7 +60,7 @@ function renderMenuProducts(specials,lunch,main,drinks,desserts,rate) {
                     </h4>
                     <p class="menu--underline-item-price"></p>
                     <p class="menu--menu-item-price">                   
-                        ${product.vault}${(Math.floor(product.price * rate)).toFixed(2)}
+                        ${product.vault}${(Math.floor(product.price * rate)).toFixed(0)}
                     </p>
                 </div>           
                 <p class="menu--menu-item-description">
@@ -90,7 +90,7 @@ function renderMenuProducts(specials,lunch,main,drinks,desserts,rate) {
                     </h4>
                     <p class="menu--underline-item-price"></p>
                     <p class="menu--menu-item-price">                   
-                        ${product.vault}${(Math.floor(product.price * rate)).toFixed(2)}
+                        ${product.vault}${(Math.floor(product.price * rate)).toFixed(0)}
                     </p>
                 </div>           
                 <p class="menu--menu-item-description">
@@ -120,7 +120,7 @@ function renderMenuProducts(specials,lunch,main,drinks,desserts,rate) {
                     </h4>
                     <p class="menu--underline-item-price"></p>
                     <p class="menu--menu-item-price">                   
-                        ${product.vault}${(Math.floor(product.price * rate)).toFixed(2)}
+                        ${product.vault}${(Math.floor(product.price * rate)).toFixed(0)}
                     </p>
                 </div>           
                 <p class="menu--menu-item-description">
@@ -150,7 +150,7 @@ function renderMenuProducts(specials,lunch,main,drinks,desserts,rate) {
                     </h4>
                     <p class="menu--underline-item-price"></p>
                     <p class="menu--menu-item-price">                   
-                        ${product.vault}${(Math.floor(product.price * rate)).toFixed(2)}
+                        ${product.vault}${(Math.floor(product.price * rate)).toFixed(0)}
                     </p>
                 </div>           
                 <p class="menu--menu-item-description">
