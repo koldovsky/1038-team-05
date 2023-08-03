@@ -1,0 +1,45 @@
+[
+    {
+       "id":"1",
+       "title":"Duck Confit Poutine",
+       "price":24,
+       "description":"Pickled red cabbage, green peas, caramelized onions, duck confit, 320 g.",
+       "vault": "$"
+    },
+    {
+       "id":"2",
+       "title":"Warm Goat Cheese Salad",
+       "price":16,
+       "description":"Mixed greens, sunflower seeds, dried cranberries, pan-fried cheese, 200g.",
+       "vault": "$"
+    },
+    {
+       "id":"3",
+       "title":"Beef Tartare",
+       "price":25,
+       "description":"Beef filet, fermented cabbage, grilled romaine heart, cashew purée, 200g.",
+       "vault": "$"
+    },
+    {
+       "id":"4",
+       "title":"Creamy Mac and Cheese",
+       "price":20,
+       "description":"Homemade pasta and freshly made and warmed up cheese sauce, 300g.",
+       "vault": "$"
+    },
+    {
+        "id":"5",
+        "title":"Halloumi",
+        "price":35,
+        "description":"Roasted vegetables, celeriac purée, sunflower seeds, 200g.",
+        "vault": "$"
+     },
+     {
+        "id":"6",
+        "title":"Chicken A La King",
+        "price":25,
+        "description":"Creamy white sauce with poached chicken pieces, mushrooms, 250g.",
+        "vault": "$"
+     }
+]
+ 

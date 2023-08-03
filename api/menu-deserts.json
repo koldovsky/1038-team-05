@@ -1,0 +1,45 @@
+[
+    {
+       "id":"1",
+       "title":"Pouding Chomeur",
+       "price":13,
+       "description":"With maple syrup sauce, 200g.",
+       "vault": "$"
+    },
+    {
+       "id":"2",
+       "title":"Cheesecake",
+       "price":15,
+       "description":"Choose from fruity or liqueur-infused cheesecake, 250g.",
+       "vault": "$"
+    },
+    {
+       "id":"3",
+       "title":"Lemon Tart",
+       "price":8,
+       "description":"Perfect as a dessert or as a snack with a cup of coffee, 120g.",
+       "vault": "$"
+    },
+    {
+       "id":"4",
+       "title":"Apple Crumble Pie",
+       "price":8,
+       "description":"Ideal dessert for any occasion, 200g.",
+       "vault": "$"
+    },
+    {
+        "id":"5",
+        "title":"Chocolate Tart",
+        "price":15,
+        "description":"Served with white chocolate sauce and raspberries, 250g.",
+        "vault": "$"
+     },
+     {
+        "id":"6",
+        "title":"Creme Brulee",
+        "price":15,
+        "description":"A delicate dessert with a crunchy caramel topping, 180g.",
+        "vault": "$"
+     }
+]
+ 
