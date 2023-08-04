@@ -213,3 +213,21 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .news__content-wine-card {
+        min-width: 370px;
+        min-height: 541.188px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .news__content-wine-card {
+        width: 370px;
+        height: 515.078px;
+    }
+
+    .news__content-mussel-card,
+    .news__content-meat-card {
+        width: 370px;
+    }
+}
