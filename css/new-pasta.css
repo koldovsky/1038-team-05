@@ -1,5 +1,5 @@
 .all-pasta{
-    background-image: url(/img/new-pasta/new-pasta-backround.svg);
+    background-image: url(../img/new-pasta/new-pasta-backround.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -12,19 +12,19 @@
 }
 .new-pasta{
     font-size: small;
-    color: rgb(255, 93, 54);
+    color: var(--prices-color);
     font-family: "Roboto";
     font-weight: bold;
 }
 
 .italian-days{
     font-family: "Vollkorn";
-    color: rgb(75, 86, 106)
+    color: var(--background-dark-color);
 }
 .fairwiev{
     font-family: "Roboto" sans-serif;
     font-size: medium;
-    color: rgb(130, 134, 143);
+    color: var(--subtitle-color);
 }
 .all-menu{
     display: flex;
@@ -43,23 +43,23 @@
 
 .pasta{
     font-family: "Roboto" sans-serif;
-    color: rgb(130, 134, 143);
+    color: var(--subtitle-color);
     font-size: small;
     font-weight: bold;
 }
 .name-of-food{
     font-family: Vollkorn;
-    color: rgb(75, 86, 106);
+    color: var(--background-dark-color);
     font-size: larger;
 }
 .netto{
     font-family: "Roboto" sans-serif;
-    color: rgb(130, 134, 143);
+    color: var(--subtitle-color);
     font-style: italic;
 }
 .ingirients{
     font-family: "Roboto" sans-serif;
-    color: rgb(155, 158, 164);
+    color: var(--description-text-color);
 
 }
 
@@ -71,7 +71,7 @@
     height: 294px;
     max-width: 800px;
     min-width: 265px;
-    background-color: white;
+    background-color: var(--background-light-color);
 }
 
 .food-container2{
@@ -82,7 +82,7 @@
     height: 294px;
     max-width: 800px;
     min-width: 265px;
-    background-color: white;
+    background-color: var(--background-light-color);
 }
 .text{
     flex: 1;
@@ -94,8 +94,9 @@
 }
 .photo{
     width: 285px;
-    height: 294px;
+    min-height: 294px;
     object-fit: cover;
+    background-size: cover;
 }
 
 .end-block{
@@ -104,11 +105,43 @@
 
 .phone-number{
     font-family: "Roboto" sans-serif;
-    color: rgb(130, 134, 143);
+    color: var(--subtitle-color);
 }
 a{
-    color: rgb(255, 93, 40);
+    color: var(--buttons-color);
 }
 a:hover{
-    color: darkorange;
+    color: var(--buttons-hover-color);
+}
+
+@media (max-width: 350px) {
+    .food-container, .food-container2 {
+        flex-direction: column;
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 767px) {
+    .all-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-container {
+        max-width: 100%;
+        gap: 30px;
+    }
+
+    .food-container, .food-container2 {
+        flex-direction: column;
+    }
+
+    .photo {
+        width: 100%;
+        height: auto;
+    }
 }
