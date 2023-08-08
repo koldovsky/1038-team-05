@@ -60,7 +60,17 @@
     --about-us__title__name: rgb(255, 255, 255);
     --about-us__title__text: rgba(247, 246, 242, 0.62);
     --about-us__title__text__location: rgba(247, 246, 242, 0.85);
+    --description-background-color: rgb(255, 255, 255);
+	--description__blocks__text__subtitle: rgb(255, 93, 40);
+	--description__blocks__text__title: rgb(75, 86, 106);
+	--description__blocks__text__undertitle: rgb(130, 134, 143); 
+	--description__blocks__text__gambino: rgb(155, 158, 164);
+	--description__svg: rgb(255, 93, 40);
     --footer-divider-color: rgb(130, 134, 143, 0.3);
+    --menu__title__background: rgb(255, 93, 40);
+    --menu__title__name: rgb(255, 255, 255);
+    --menu__title__text: rgba(247, 246, 242, 0.62);
+    --menu__title__text__location: rgba(247, 246, 242, 0.85);
 
 
 }
@@ -82,3 +92,7 @@ h2 {
 p {
     font-family: Roboto, sans-serif;
 }
+
+a {
+    text-decoration: none;
+  }

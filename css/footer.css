@@ -171,6 +171,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
   }
   .footer__el-gambino-item {
     display: flex;
