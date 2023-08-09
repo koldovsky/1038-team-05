@@ -1,14 +1,15 @@
 .news__introduction {
+    padding-top: 95px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    text-align: center;
     background-image: url(../img/news/background_intro.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    display: block;
-    padding-top: 95px;
-    padding-bottom: 30px;
     position: relative;
-    padding-top: 95px;
-    padding-bottom: 30px;
 }
 
 .news__section-name {
@@ -18,34 +19,20 @@
     font-family: Roboto, sans-serif;
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 
 .news__main-title {
     display: flex;
     justify-content: center;
     font-family: Vollkorn, serif;
-    font-size: 2.125rem;
+    font-size: 2.375rem;
     font-weight: 400;
     color: var(--title-color);
-    word-wrap: break-word;
-    font-stretch: 100%;
-    text-align: center;
 }
 
 .underline_line {
     display: flex;
     justify-content: center;
-}
-
-.news__content-main {
-    /*background-image: url(../img/news/background_main.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;*/
-    padding-left: 24px;
-    padding-right: 24px;
 }
 
 .news__introduction-text {
@@ -55,14 +42,16 @@
     font-family: Roboto, sans-serif;
     color: var(--subtitle-color);
     font-size: 1.1875rem;
-    font-style: normal;
-    word-wrap: break-word;
-    font-stretch: 100%;
+}
+
+.news__content-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .news__content-wine-card {
-    min-width: 272px;
-    min-height: 494px;
+    min-height: 494.31px;
     background-image: var(--background-gradient), url(../img/news/wine.jpg);
     background-position: center;
     background-size: cover;
@@ -72,7 +61,10 @@
     align-items: left;
     justify-content: flex-end;
     border-radius: 6px;
+    margin: 0 15px 0 15px;
 }
+
+/*сделать рамку и сдвинуть фоновое из-е*/
 
 .news__content-title-wine-card {
     color: var(--background-light-color);
@@ -109,15 +101,23 @@
 }
 
 .news__content-mussel-and-meat-card {
-    min-width: 272px;
-    min-height: 511.516px;
-    margin-top: 30px;
     display: flex;
     flex-direction: column;
+    padding: 30px 15px 100px 15px;
+    justify-content: center;
 }
 
+.news__content-mussel-card,
 .news__content-meat-card {
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.news__mussel-image,
+.news__meat-image {
+    width: 100%;
+    height: auto;
 }
 
 .news__content-title {
@@ -147,7 +147,6 @@
     justify-content: center;
     margin: 10px 10px 10px 10px;
     align-items: center;
-    text-align: center;
     line-height: 22.08px;
     cursor: pointer;
 }
@@ -159,70 +158,76 @@
     font-weight: 600;
 }
 
-.news__mussel-meat-image {
-    min-width: 272px;
-    min-height: 182.312px;
-    display: flex;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.news__mussel-image,
-.news__meat-image {
-    width: 100%; 
-    height: 100%;
+.news__content-meat-card {
+    margin-top: 50px;
 }
 
 @media (min-width: 768px) {
+    .news__content-main {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
     .news__content-mussel-and-meat-card {
         display: flex;
         flex-direction: row;
+        padding-top: 0;
         gap: 30px;
-        min-width: 687px;
-        min-height: 501.516px;
-    }
-
-    .news__content-mussel-card,
-    .news__content-meat-card {
-        box-sizing: border-box;
-        display: block;
-        min-width: 328.5px;
-        min-height: 501.516px;
+        margin-top: 30px;
     }
 
     .news__content-meat-card {
         margin-top: 0;
     }
 
-    .news__mussel-meat-image {
-        min-width: 328.5px;
-        min-height: 220.188px;
+    .news__content-mussel-card,
+    .news__content-meat-card {
+        justify-content: flex-start;
     }
+
 }
 
 @media (min-width: 992px) {
     .news__content-main {
-        display: flex;
         flex-direction: row;
-        min-width: 895px;
-        min-height: 541.188px;
-        gap: 30px;
+        max-width: 1170px;
+        padding-bottom: 120px;
+        margin: 0 auto;
     }
 
     .news__content-wine-card {
-        min-width: 270px;
+        width: 270px;
+        height: 541.188px;
+    }
+
+    .news__content-mussel-and-meat-card {
+        flex: 1;
+        margin-top: 0;
+        padding-bottom: 0;
+        justify-content: space-between;
+    }
+
+    .news__content-title {
+        font-size: 1.625rem;
+        line-height: 33.8px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .news__content-wine-card {
+        min-width: 370px;
         min-height: 541.188px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .news__content-wine-card {
+        width: 370px;
+        height: 515.078px;
     }
 
     .news__content-mussel-card,
     .news__content-meat-card {
-        min-width: 595px;
-        min-height: 541.188px;
-    }
-
-    .news__mussel-meat-image {
-        min-width: 282.5px;
-        min-height: 189.359px;
+        width: 370px;
     }
 }

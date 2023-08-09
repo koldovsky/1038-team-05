@@ -1,20 +1,138 @@
 .all-pasta{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family:'Roboto',sans-serif;
-
-
-}
-
-.all-inn{
-    background-image: url(/img/new-pasta/new-pasta-backround.svg);
+    background-image: url(../img/new-pasta/new-pasta-backround.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    display: block;
+    background-position: center center;
 }
+
+
 .body{
     text-align: center;
-    
+    margin: 10px 0;
+    min-width: 265px;
 }
+.new-pasta{
+    font-size: small;
+    color: var(--prices-color);
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.italian-days{
+    font-family: "Vollkorn";
+    color: var(--background-dark-color);
+}
+.fairwiev{
+    font-family: "Roboto" sans-serif;
+    font-size: medium;
+    color: var(--subtitle-color);
+}
+.all-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 800px;
+        width: 600px;
+        margin: 20px 0;
+}
+
+.pasta{
+    font-family: "Roboto" sans-serif;
+    color: var(--subtitle-color);
+    font-size: small;
+    font-weight: bold;
+}
+.name-of-food{
+    font-family: Vollkorn;
+    color: var(--background-dark-color);
+    font-size: larger;
+}
+.netto{
+    font-family: "Roboto" sans-serif;
+    color: var(--subtitle-color);
+    font-style: italic;
+}
+.ingirients{
+    font-family: "Roboto" sans-serif;
+    color: var(--description-text-color);
+
+}
+
+.food-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 570px;
+    height: 294px;
+    max-width: 800px;
+    min-width: 265px;
+    background-color: var(--background-light-color);
+}
+
+.food-container2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 570px;
+    height: 294px;
+    max-width: 800px;
+    min-width: 265px;
+    background-color: var(--background-light-color);
+   
+}
+.text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 35px 30px;
+    text-align: center;
+    position: relative;
+}
+.photo{
+    width: 285px;
+    min-height: 294px;
+    object-fit: cover;
+    background-size: cover;
+} 
+
+.end-block{
+    text-align: center;
+}
+
+.phone-number{
+    font-family: "Roboto" sans-serif;
+    color: var(--subtitle-color);
+}
+a{
+    color: var(--buttons-color);
+}
+a:hover{
+    color: var(--buttons-hover-color);
+}
+
+/* @media(min-width:1000px){
+    .menu-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 800px;
+        width: 600px;
+        margin: 20px 0;
+        
+    }
+    .photo{
+        width: 285px;
+    min-height: 294px;
+    object-fit: cover;
+    background-size: cover;
+    }
+} */
+
+

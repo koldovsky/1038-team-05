@@ -1,0 +1,45 @@
+[
+    {
+       "id":"1",
+       "title":"Chicken Pot Pie",
+       "price":12,
+       "description":"Pie with carrots, peas and a mix of chicken, 250g.",
+       "vault": "$"
+    },
+    {
+       "id":"2",
+       "title":"Chicken Thighs & Mushroom",
+       "price":15,
+       "description":"Thighs in a buttery sauce with a sprinkle of herbs, 320g.",
+       "vault": "$"
+    },
+    {
+       "id":"3",
+       "title":"Three-Cheese Pasta",
+       "price":25,
+       "description":"Pasta filled with ricotta cheese & spinach, 220g.",
+       "vault": "$"
+    },
+    {
+       "id":"4",
+       "title":"Frito Misto",
+       "price":14,
+       "description":"Served with Italian tartare sauce, 200g.",
+       "vault": "$"
+    },
+    {
+        "id":"5",
+        "title":"Penne Carbonara",
+        "price":18,
+        "description":"Based on eggs, cheese bacon, and pepper, 250g.",
+        "vault": "$"
+     },
+     {
+        "id":"6",
+        "title":"Tomato and Arugula Salad",
+        "price":17,
+        "description":"Simple balsamic pasta salad with fresh cherry tomatoes, arugula.",
+        "vault": "$"
+     }
+]
+ 

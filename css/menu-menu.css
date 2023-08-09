@@ -27,8 +27,7 @@
 
 .menu--menu-subtitle-description{
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;  
 }
 
 @media (max-width: 765px) {
@@ -55,6 +54,7 @@
 .menu--menu-all-items{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 @media (min-width: 1028px) {
@@ -81,7 +81,7 @@
     font-size: 1.5rem;
     font-family: Vollkorn, serif;
     font-weight: normal;
-    color: var(--text-color);
+    color: var(--title-color);
 }
 
 @media (max-width: 550px) {
@@ -94,7 +94,9 @@
     color: var(--prices-color);
     font-size: 1.3125rem;
 }
-
+.menu--reserve-description{
+    color: var(--description-text-color);
+}
 .menu--menu-item-description{
     color: var(--description-text-color);
     font-size: 1.0625rem;
@@ -138,10 +140,11 @@
     .menu--menu-item{
         max-width: 200px;
         min-width: 200px;
-        max-height: 250px;
-        min-height: 250px;
+        max-height: 345px;
+        min-height: 345px;
     }
 }
+
 
 @media (max-width: 350px) {
     .menu--menu-item{
@@ -237,6 +240,7 @@
 .menu--filler-white{
     width: 70px;
     height: 13.67px;
+    margin-bottom: 35px;
 }
 
 .menu--underline-item-price{
@@ -267,3 +271,94 @@
         align-items: unset;
     }
 }
+.menu--add-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 90px;
+    padding-bottom: 15px;
+}
+.menu--add-section--box {
+    flex: 1 1 30%; /* Підлаштуйте розміри на свій розсуд */
+    display: flex;
+    flex-direction: row;  
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (max-width: 995px) {
+    .menu--add-section--box {
+        flex: 1 1 50%; /* Змінюємо розмір блоків на 50% */
+      }
+    .menu--add-section--box:nth-child(3) {
+        order: 1; /* Змінюємо порядок третього блока на перший */
+    }
+    .menu--add-section--centred{
+        max-width: 404px;
+        padding-left: 30%;
+    }
+}
+@media (max-width: 551px) {
+    .menu--add-section{
+        flex-direction: column;
+    }
+    .menu--add-section--centred{
+        max-width: none;
+        padding-left: 15px;
+    }
+}
+
+.menu-title-custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+.menu-title-select-selected {
+    background-color: orange;
+}
+  
+  /* Style the arrow inside the select element: */
+  .menu-title-select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+  }
+  .menu-title-select-selected:focus-visible {
+    outline: none;
+  }
+  /* Point the arrow upwards when the select box is open (active): */
+  .menu-title-select-selected.select-arrow-active:after {
+    top: 7px;
+  }
+  
+  /* style the items (options), including the selected item: */
+  .menu-title-select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  /* Style items (options): */
+  .menu-title-select-items {
+    position: absolute;
+    background-color: orange;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  /* Hide the items when the select box is closed: */
+  .menu-title-select-hide {
+    display: none;
+  }
+  
+  .menu-title-select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .menu-title-currency{
+    margin-top: 16px;
+    margin-bottom: 1px;
+  }
