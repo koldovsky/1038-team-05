@@ -9,7 +9,7 @@
 }
 
 .about-us__restaurant-table {
-  width: 302px;
+  width: 350px;
   height: 400px;
   display: flex;
   margin-top: 25px;
@@ -65,6 +65,8 @@
 @media (max-width: 768px) {
   .about-us {
     flex-direction: column;
+    background-image: none; 
+    background-color: var(-background-light-color);
   }
 
   .about-us__restaurant-table {
