@@ -2,6 +2,7 @@
     background-image: url(../img/new-pasta/new-pasta-backround.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 
@@ -32,12 +33,12 @@
     align-items: center;
 }
 .menu-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-
-    margin: 20px 0;
-    
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 800px;
+        width: 600px;
+        margin: 20px 0;
 }
 
 .pasta{
@@ -68,11 +69,9 @@
     align-items: center;
     width: 570px;
     height: 294px;
-    /* max-width: 800px;
-    min-width: 265px; */
+    max-width: 800px;
+    min-width: 265px;
     background-color: var(--background-light-color);
-    position: relative;
-    max-width: 100%;
 }
 
 .food-container2{
@@ -81,11 +80,10 @@
     align-items: center;
     width: 570px;
     height: 294px;
-    /* max-width: 800px;
-    min-width: 265px; */
+    max-width: 800px;
+    min-width: 265px;
     background-color: var(--background-light-color);
-    position: relative;
-    max-width: 100%;
+   
 }
 .text{
     flex: 1;
@@ -98,23 +96,11 @@
     position: relative;
 }
 .photo{
-    /* width: 285px;
+    width: 285px;
     min-height: 294px;
     object-fit: cover;
-    background-size: cover; */
-    /* max-width: 100%;
-    height: auto; */
-    max-width: 100%;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+    background-size: cover;
 } 
-
-.photo::before {
-    content: '';
-    display: block;
-    padding-top: 100%; 
-  }
 
 .end-block{
     text-align: center;
@@ -131,7 +117,7 @@ a:hover{
     color: var(--buttons-hover-color);
 }
 
-@media(min-width:1000px){
+/* @media(min-width:1000px){
     .menu-container{
         display: flex;
         flex-wrap: wrap;
@@ -147,29 +133,6 @@ a:hover{
     object-fit: cover;
     background-size: cover;
     }
-}
+} */
 
-/* @media (max-width: 767px) {
-    .menu-container {
-      max-width: 100%; 
-      width: auto; 
-  
-    .food-container,
-    .food-container2 {
-      flex-direction: column; 
-      align-items: center; 
-      width: 100%; 
-    }
-  
-    .photo {
-      width: 100%; 
-      height: auto; 
-    }
-}
-}
-  
-  @media (max-width: 350px) {
-    .food-container {
-      min-width: 100%; 
-    }
-  } */
+
