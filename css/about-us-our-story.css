@@ -1,10 +1,10 @@
- .about-us-our-story{
+.about-us-our-story {
   background-image: url(../img/about-us/about-bg.png);
-   justify-content: space-around;
+  justify-content: space-around;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; 
-  ;}
+  background-position: center center;
+}
 
 .about-us-our-story__first-subtitle {
   margin: 0;
@@ -20,29 +20,29 @@
 }
 
 .about-us-our-story__first-paragraph {
-    margin-top: 10px;
-    margin-bottom: 0;
-    font-family: Roboto, sans-serif;
-    font-size: 19px;
-    font-weight: 500;
-    line-height: 26.6px;
-    text-align: center;
-    vertical-align: baseline;
-    color: var(--vacancies__title__text);}
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 26.6px;
+  text-align: center;
+  vertical-align: baseline;
+  color: var(--vacancies__title__text);
+}
 
 .Date {
   text-align: center;
   color: var(--small-text);
   margin: 10px;
-  font-family: Vollkorn, serif; 
-font-size: 20px;
+  font-family: Vollkorn, serif;
+  font-size: 20px;
 }
 
 .about-us-our-story__year {
   text-align: center;
   justify-content: center;
-  margin: 20px;  
-  
+  margin: 20px;
 }
 
 .about-us-our-story__title {
@@ -56,39 +56,39 @@ font-size: 20px;
   text-align: center;
   color: var(--vacancies__title__name);
 }
-.about-us-our-story__divider{
-width: 51px;
-height: 3px;
-background-color:var(--background-dark-color) ;
-margin: 15px 0 15px 0;
-display: inline-block;
 
+.about-us-our-story__divider {
+  width: 51px;
+  height: 3px;
+  background-color: var(--background-dark-color);
+  margin: 15px 0 15px 0;
+  display: inline-block;
 }
-.about-us-our-story__logo{
+
+.about-us-our-story__logo {
   margin-top: 10px;
 }
-.about-us-our-story__main-title{
+
+.about-us-our-story__main-title {
   display: block;
-    margin:0;
-    font-family: Vollkorn, serif;
-    font-stretch: 100%;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 40.8px;
-    text-align: center;
-    color: var(--vacancies__title__name);
+  margin: 0;
+  font-family: Vollkorn, serif;
+  font-stretch: 100%;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40.8px;
+  text-align: center;
+  color: var(--vacancies__title__name);
 }
 
-.about-us-our-story__paragraph{
-color: var(--description-text-color);
-
+.about-us-our-story__paragraph {
+  color: var(--description-text-color);
 }
-.about-us-our-story__video-photo{
+
+.about-us-our-story__video-photo {
   display: flex;
-
 }
-.about-us-our-story__location{
+
+.about-us-our-story__location {
   padding: 40px;
 }
-
-
