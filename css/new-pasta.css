@@ -35,8 +35,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    max-width: 800px;
-    width: 600px;
+
     margin: 20px 0;
     
 }
@@ -69,9 +68,11 @@
     align-items: center;
     width: 570px;
     height: 294px;
-    max-width: 800px;
-    min-width: 265px;
+    /* max-width: 800px;
+    min-width: 265px; */
     background-color: var(--background-light-color);
+    position: relative;
+    max-width: 100%;
 }
 
 .food-container2{
@@ -80,9 +81,11 @@
     align-items: center;
     width: 570px;
     height: 294px;
-    max-width: 800px;
-    min-width: 265px;
+    /* max-width: 800px;
+    min-width: 265px; */
     background-color: var(--background-light-color);
+    position: relative;
+    max-width: 100%;
 }
 .text{
     flex: 1;
@@ -91,13 +94,27 @@
     justify-content: space-between;
     height: 100%;
     padding: 35px 30px;
+    text-align: center;
+    position: relative;
 }
 .photo{
-    width: 285px;
+    /* width: 285px;
     min-height: 294px;
     object-fit: cover;
-    background-size: cover;
-}
+    background-size: cover; */
+    /* max-width: 100%;
+    height: auto; */
+    max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+} 
+
+.photo::before {
+    content: '';
+    display: block;
+    padding-top: 100%; 
+  }
 
 .end-block{
     text-align: center;
@@ -114,34 +131,45 @@ a:hover{
     color: var(--buttons-hover-color);
 }
 
-@media (max-width: 350px) {
-    .food-container, .food-container2 {
-        flex-direction: column;
+@media(min-width:1000px){
+    .menu-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 800px;
+        width: 600px;
+        margin: 20px 0;
+        
     }
-
-    .photo {
-        width: 100%;
-        height: auto;
+    .photo{
+        width: 285px;
+    min-height: 294px;
+    object-fit: cover;
+    background-size: cover;
     }
 }
 
-@media (min-width: 350px) and (max-width: 767px) {
-    .all-menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
+/* @media (max-width: 767px) {
     .menu-container {
-        max-width: 100%;
-        gap: 30px;
+      max-width: 100%; 
+      width: auto; 
+  
+    .food-container,
+    .food-container2 {
+      flex-direction: column; 
+      align-items: center; 
+      width: 100%; 
     }
-
-    .food-container, .food-container2 {
-        flex-direction: column;
-    }
-
+  
     .photo {
-        width: 100%;
-        height: auto;
+      width: 100%; 
+      height: auto; 
     }
 }
+}
+  
+  @media (max-width: 350px) {
+    .food-container {
+      min-width: 100%; 
+    }
+  } */
